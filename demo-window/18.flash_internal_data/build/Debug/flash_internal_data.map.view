@@ -1,0 +1,3 @@
+tool: GCC
+fileName: flash_internal_data.map
+elfName: flash_internal_data.elf

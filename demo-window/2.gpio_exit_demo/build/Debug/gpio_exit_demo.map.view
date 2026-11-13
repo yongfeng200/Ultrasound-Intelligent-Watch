@@ -1,0 +1,3 @@
+tool: GCC
+fileName: gpio_exit_demo.map
+elfName: gpio_exit_demo.elf

@@ -1,0 +1,6 @@
+tool: GCC
+fileName: 'uart_mbus_demo.map'
+elfName: 'uart_mbus_demo.elf'
+compilerName: 'LoongArch GNU toolchain LA32 v2.0 (20230903)'
+compilerFullName: 'loongarch32-linux-gnusf-gcc.exe (LoongArch GNU toolchain LA32 v2.0 (20230903)) 8.3.0'
+compilerPath: 'E:\Loongson\1D6driver\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe'

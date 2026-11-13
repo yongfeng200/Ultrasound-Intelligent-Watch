@@ -1,0 +1,88 @@
+version: "4.1"
+name: lcd_display_numbers
+type: ANY-GCC
+deviceName: null
+packDir: null
+srcDirs:
+  - driver
+  - include
+  - target
+  - UserInc
+  - UserSrc
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: bcec7ef513fa4293fbc0ff7a1f968640
+targets:
+  Debug:
+    cppPreprocessAttrs:
+      defineList: []
+      incList:
+        - include
+        - UserInc
+      libList: []
+    excludeList: []
+    settings:
+      debugger: cortex-debug
+    toolchain: ANY_GCC
+    toolchainConfigMap:
+      ANY_GCC:
+        linkerScriptPath: ld.script
+        options:
+          version: 2
+          afterBuildTasks:
+            - name: make hex
+              abortAfterFailed: false
+              command: '"${CompilerFolder}/${CompilerPrefix}objcopy" -O ihex "${OutDir}/${TargetName}.elf" "${OutDir}/${TargetName}.hex"'
+              disable: false
+            - name: make bin
+              abortAfterFailed: false
+              command: '"${CompilerFolder}/${CompilerPrefix}objcopy" -O binary "${OutDir}/${TargetName}.elf" "${OutDir}/${TargetName}.bin"'
+              disable: false
+            - name: make asm
+              abortAfterFailed: false
+              command: '"${CompilerFolder}/${CompilerPrefix}objdump" -alDS "${OutDir}/${TargetName}.elf" > "${OutDir}/${TargetName}.s"'
+              disable: false
+          asm-compiler:
+            ASM_FLAGS: -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: ""
+            C_FLAGS: -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c
+            language-c: c11
+            language-cpp: gnu++11
+            signed-char: true
+          global:
+            output-debug-info: enable
+          linker:
+            $disableOutputTask: true
+            LD_FLAGS: -G 0 -static -Ttext 0x1C000000 --gc-sections -o ${ProjectName}.elf
+            linker-type: ld
+            object-order:
+              - order: 1
+                pattern: "**/.obj/target/start.o"
+              - order: 2
+                pattern: "**/.obj/target/sonar.o"
+              - order: 3
+                pattern: "**/.obj/target/main.o"
+            output-format: elf
+            remove-unused-input-sections: true
+    uploadConfigMap:
+      Custom:
+        bin: ""
+        commandLine: ${workspaceFolder}\openocd_flash_tool.bat program_and_verify ${ProjectName}.bin 0x1f000000
+        eraseChipCommand: ${workspaceFolder}\openocd_flash_tool.bat erase_full
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+    uploader: Custom

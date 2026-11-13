@@ -1,0 +1,6 @@
+tool: GCC
+fileName: 'wave_peak_measure.map'
+elfName: 'wave_peak_measure.elf'
+compilerName: 'LoongArch GNU toolchain LA32 v2.0 (20230903)'
+compilerFullName: 'loongarch32-linux-gnusf-gcc.exe (LoongArch GNU toolchain LA32 v2.0 (20230903)) 8.3.0'
+compilerPath: 'E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe'

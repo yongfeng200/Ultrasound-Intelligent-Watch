@@ -1,0 +1,430 @@
+[2025-11-14 11:05:39]	[done]
+	build successfully !
+
+[2025-11-14 16:11:32]	compilation failed at : "e:\工作路径\软件\开发板例程-BA版\25.wave_peak_measure\target\main.c", exit code: 1
+command: 
+  "E:\WorkSpace\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -ffixed-f4 -ffixed-f5 -ffixed-f6 -ffixed-f7 -ffixed-f8 -ffixed-f9 -ffixed-f10 -ffixed-f11 -ffixed-f12 -ffixed-f13 -ffixed-f14 -ffixed-f15 -ffixed-f16 -ffixed-f17 -ffixed-f18 -ffixed-f19 -ffixed-f20 -ffixed-f21 -ffixed-f22 -ffixed-f22 -ffixed-f23 -ffixed-f24 -ffixed-f25 -ffixed-f26 -ffixed-f27 -ffixed-f28 -ffixed-f29 -ffixed-f30 -ffixed-f31 -o ./build/Debug/.obj/target/main.o -MMD ./target/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./target/main.c: In function 'main':
+./target/main.c:79:57: error: 'hit_num' undeclared (first use in this function)
+    manual_avrDTof = MEASURE_GetManualDtofValue(&tdc_cal,hit_num,flter_num);
+                                                         ^~~~~~~
+./target/main.c:79:57: note: each undeclared identifier is reported only once for each function it appears in
+./target/main.c:79:65: error: 'flter_num' undeclared (first use in this function); did you mean 'g_seg_num'?
+    manual_avrDTof = MEASURE_GetManualDtofValue(&tdc_cal,hit_num,flter_num);
+                                                                 ^~~~~~~~~
+                                                                 g_seg_num
+
+[2025-11-14 16:12:02]	[done]
+	build successfully !
+
+[2025-11-14 16:19:57]	[done]
+	build successfully !
+
+[2025-11-14 16:42:24]	[done]
+	build successfully !
+
+[2025-11-14 16:56:56]	[done]
+	build successfully !
+
+[2025-11-14 16:59:01]	[done]
+	build successfully !
+
+[2025-11-14 17:33:48]	[done]
+	build successfully !
+
+[2025-11-14 17:38:40]	[done]
+	build successfully !
+
+[2026-04-03 09:10:12]	compilation failed at : "e:\Loongson\demo-window\demo-window\demo\25.wave_peak_measure\UserSrc\UserMeasure.c", exit code: 1
+command: 
+  "E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/UserSrc/UserMeasure.o -MMD ./UserSrc/UserMeasure.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserSrc/UserMeasure.c: In function 'MeasureFindWaveIndex':
+./UserSrc/UserMeasure.c:496:25: error: 'N' undeclared (first use in this function)
+     for (int i = 0; i < N; i++) {
+                         ^
+./UserSrc/UserMeasure.c:496:25: note: each undeclared identifier is reported only once for each function it appears in
+./UserSrc/UserMeasure.c:511:13: error: 'pos' undeclared (first use in this function); did you mean 'x_pos'?
+             pos = (int)(x_pos + 0.5);
+             ^~~
+             x_pos
+
+[2026-04-03 09:11:13]	compilation failed at : "e:\Loongson\demo-window\demo-window\demo\25.wave_peak_measure\UserSrc\UserMeasure.c", exit code: 1
+command: 
+  "E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/UserSrc/UserMeasure.o -MMD ./UserSrc/UserMeasure.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserSrc/UserMeasure.c: In function 'MeasureFindWaveIndex':
+./UserSrc/UserMeasure.c:502:25: error: 'N' undeclared (first use in this function)
+     for (int i = 0; i < N - 1; i++) {
+                         ^
+./UserSrc/UserMeasure.c:502:25: note: each undeclared identifier is reported only once for each function it appears in
+
+[2026-04-03 09:11:47]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/UserSrc/UserMeasure.o: in function `.LVL192':
+UserMeasure.c:(.text.MeasureFindWaveIndex+0x14c): undefined reference to `__extendsfdf2'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/UserSrc/UserMeasure.o: in function `.LVL195':
+UserMeasure.c:(.text.MeasureFindWaveIndex+0x170): undefined reference to `__extendsfdf2'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/UserSrc/UserMeasure.o: in function `.LVL197':
+UserMeasure.c:(.text.MeasureFindWaveIndex+0x1a8): undefined reference to `__adddf3'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: UserMeasure.c:(.text.MeasureFindWaveIndex+0x1ac): undefined reference to `__fixdfsi'
+
+
+[2026-04-03 09:12:51]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/UserSrc/UserMeasure.o: in function `.LVL192':
+UserMeasure.c:(.text.MeasureFindWaveIndex+0x148): undefined reference to `__extendsfdf2'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/UserSrc/UserMeasure.o: in function `.LVL193':
+UserMeasure.c:(.text.MeasureFindWaveIndex+0x15c): undefined reference to `__adddf3'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: UserMeasure.c:(.text.MeasureFindWaveIndex+0x160): undefined reference to `__fixdfsi'
+
+
+[2026-04-03 09:15:07]	[done]
+	build successfully !
+
+[2026-04-03 09:16:05]	[done]
+	build successfully !
+
+[2026-04-03 09:19:37]	[done]
+	build successfully !
+
+[2026-04-03 09:23:47]	[done]
+	build successfully !
+
+[2026-04-03 10:27:12]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/target/ls1d_std_Interrupt.o: in function `.LVL64':
+ls1d_std_Interrupt.c:(.text.ResValid_IRQHandler+0x30): undefined reference to `Measure_ChangeGate'
+
+
+[2026-04-03 10:30:34]	compilation failed at : "e:\Loongson\demo-window\demo-window\demo\25.wave_peak_measure\target\main.c", exit code: 1
+command: 
+  "E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/target/main.o -MMD ./target/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./target/main.c: In function 'main':
+./target/main.c:92:8: error: 'gate2_len' undeclared (first use in this function)
+    if (gate2_len == 0)
+        ^~~~~~~~~
+./target/main.c:92:8: note: each undeclared identifier is reported only once for each function it appears in
+
+[2026-04-03 10:31:31]	[done]
+	build successfully !
+
+[2026-04-03 10:32:39]	[done]
+	build successfully !
+
+[2026-04-03 10:36:07]	[done]
+	build successfully !
+
+[2026-04-03 10:38:05]	[done]
+	build successfully !
+
+[2026-04-03 10:44:36]	[done]
+	build successfully !
+
+[2026-04-03 11:20:17]	[done]
+	build successfully !
+
+[2026-04-03 11:23:02]	[done]
+	build successfully !
+
+[2026-04-03 11:24:54]	[done]
+	build successfully !
+
+[2026-04-03 12:27:25]	compilation failed at : "e:\Loongson\demo-window\demo-window\demo\25.wave_peak_measure\UserSrc\UserMeasure.c", exit code: 1
+command: 
+  "E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/UserSrc/UserMeasure.o -MMD ./UserSrc/UserMeasure.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserSrc/UserMeasure.c: In function 'MeasureFindWaveIndex':
+./UserSrc/UserMeasure.c:513:9: error: 'target_y' undeclared (first use in this function)
+    if ((target_y >= y0 && target_y <= y1) ||
+         ^~~~~~~~
+./UserSrc/UserMeasure.c:513:9: note: each undeclared identifier is reported only once for each function it appears in
+
+[2026-04-03 12:28:43]	[done]
+	build successfully !
+
+[2026-04-03 16:25:48]	[done]
+	build successfully !
+
+[2026-04-03 16:30:14]	compilation failed at : "e:\Loongson\demo-window\demo-window\demo\25.wave_peak_measure\target\main.c", exit code: 1
+command: 
+  "E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -Ilibs -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/target/main.o -MMD ./target/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./target/main.c: In function 'main':
+./target/main.c:69:9: error: 'I' undeclared (first use in this function)
+    for (I=0;I<10;j++)
+         ^
+./target/main.c:69:9: note: each undeclared identifier is reported only once for each function it appears in
+./target/main.c:69:18: error: 'j' undeclared (first use in this function)
+    for (I=0;I<10;j++)
+                  ^
+./target/main.c:72:5: error: 'res' undeclared (first use in this function); did you mean 'reg'?
+     res =fhl_init_lite(1,1,0);
+     ^~~
+     reg
+./target/main.c:86:40: error: 'Threshold' undeclared (first use in this function)
+     MEASURE_SetPulseFirstWaveThreshold(Threshold);
+                                        ^~~~~~~~~
+./target/main.c:87:5: error: 'FHL_Value' undeclared (first use in this function)
+     FHL_Value[i] = Threshold;
+     ^~~~~~~~~
+
+[2026-04-03 16:32:38]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/target/main.o: in function `.LVL27':
+main.c:(.text.startup.main+0x130): undefined reference to `IR_printf'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: libs\libautofhl.a(autofhl.o): in function `get_wavep_lite':
+autofhl.c:(.text.get_wavep_lite+0x10c): undefined reference to `DisableInt'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x118): undefined reference to `start_mop'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x188): undefined reference to `get_zerolevel'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x220): undefined reference to `start_mop'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x290): undefined reference to `start_mop'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x518): undefined reference to `EnableInt'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: libs\libautofhl.a(autofhl.o): in function `.L1049':
+autofhl.c:(.text.fhl_init_lite+0x12c): undefined reference to `get_zerolevel'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: libs\libautofhl.a(autofhl.o): in function `.L1047':
+autofhl.c:(.text.fhl_init_lite+0x34c): undefined reference to `get_zerolevel'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: libs\libautofhl.a(autofhl.o): in function `.L1101':
+autofhl.c:(.text.fhl_init_lite+0x3d0): undefined reference to `get_zerolevel'
+
+
+[2026-04-03 16:35:06]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/target/main.o: in function `.LVL27':
+main.c:(.text.startup.main+0x130): undefined reference to `IR_printf'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: libs\libautofhl.a(autofhl.o): in function `get_wavep_lite':
+autofhl.c:(.text.get_wavep_lite+0x10c): undefined reference to `DisableInt'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x118): undefined reference to `start_mop'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x220): undefined reference to `start_mop'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x290): undefined reference to `start_mop'
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: autofhl.c:(.text.get_wavep_lite+0x518): undefined reference to `EnableInt'
+
+
+[2026-04-03 16:37:50]	[done]
+	build successfully !
+
+[2026-04-03 16:40:12]	[done]
+	build successfully !
+
+[2026-04-03 16:42:33]	[done]
+	build successfully !
+
+[2026-04-03 16:44:40]	[done]
+	build successfully !
+
+[2026-04-03 17:11:19]	[done]
+	build successfully !
+
+[2026-04-03 17:14:49]	[done]
+	build successfully !
+
+[2026-04-03 17:17:55]	[done]
+	build successfully !
+
+[2026-04-03 17:18:31]	[done]
+	build successfully !
+
+[2026-04-03 17:19:49]	[done]
+	build successfully !
+
+[2026-04-03 17:20:53]	[done]
+	build successfully !
+
+[2026-04-03 17:21:58]	[done]
+	build successfully !
+
+[2026-04-03 17:37:35]	[done]
+	build successfully !
+
+[2026-04-03 17:38:46]	[done]
+	build successfully !
+
+[2026-04-03 17:39:35]	[done]
+	build successfully !
+
+[2026-04-03 17:44:12]	[done]
+	build successfully !
+
+[2026-04-03 17:45:31]	[done]
+	build successfully !
+
+[2026-04-03 17:47:37]	[done]
+	build successfully !
+
+[2026-04-03 17:48:19]	[done]
+	build successfully !
+
+[2026-04-03 17:51:29]	[done]
+	build successfully !
+
+[2026-04-03 17:53:24]	[done]
+	build successfully !
+
+[2026-04-03 17:58:24]	[done]
+	build successfully !
+
+[2026-04-03 17:59:05]	[done]
+	build successfully !
+
+[2026-04-03 18:01:03]	[done]
+	build successfully !
+
+[2026-04-03 18:05:53]	[done]
+	build successfully !
+
+[2026-04-03 18:09:23]	[done]
+	build successfully !
+
+[2026-04-03 18:10:08]	[done]
+	build successfully !
+
+[2026-04-03 18:13:03]	[done]
+	build successfully !
+
+[2026-04-03 18:16:38]	compilation failed at : "e:\Loongson\demo-window\demo-window\demo\25.wave_peak_measure\UserSrc\UserMeasure.c", exit code: 1
+command: 
+  "E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -Ilibs -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/UserSrc/UserMeasure.o -MMD ./UserSrc/UserMeasure.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserSrc/UserMeasure.c:493:10: error: conflicting types for 'MeasureFindWaveIndex'
+ uint32_t MeasureFindWaveIndex(int new_max,int target_y)
+          ^~~~~~~~~~~~~~~~~~~~
+In file included from ./UserSrc/UserMeasure.c:8:
+UserInc/UserMeasure.h:129:17: note: previous declaration of 'MeasureFindWaveIndex' was here
+ extern uint32_t MeasureFindWaveIndex(int old_max,int new_max,int target_y);
+                 ^~~~~~~~~~~~~~~~~~~~
+
+[2026-04-03 18:17:11]	[done]
+	build successfully !
+
+[2026-04-03 18:20:14]	[done]
+	build successfully !
+
+[2026-04-03 18:25:04]	[done]
+	build successfully !
+
+[2026-04-03 18:28:17]	[done]
+	build successfully !
+
+[2026-04-03 18:28:45]	[done]
+	build successfully !
+
+[2026-04-03 18:33:48]	[done]
+	build successfully !
+
+[2026-04-03 18:37:50]	[done]
+	build successfully !
+
+[2026-04-03 18:41:05]	[done]
+	build successfully !
+
+[2026-04-03 18:42:32]	[done]
+	build successfully !
+
+[2026-04-03 18:42:54]	[done]
+	build successfully !
+
+[2026-04-07 10:14:47]	[done]
+	build successfully !
+
+[2026-04-07 10:53:52]	[done]
+	build successfully !
+
+[2026-04-07 10:57:25]	[done]
+	build successfully !
+
+[2026-04-07 11:31:19]	[done]
+	build successfully !
+
+[2026-04-07 19:40:16]	[done]
+	build successfully !
+
+[2026-04-09 14:07:04]	[done]
+	build successfully !
+
+[2026-04-09 14:13:09]	[done]
+	build successfully !
+
+[2026-04-09 14:22:03]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-ld.exe: ./build/Debug/.obj/target/main.o: in function `.LVL42':
+main.c:(.text.startup.main+0x240): undefined reference to `__extendsfdf2'
+
+
+[2026-04-09 14:22:59]	[done]
+	build successfully !
+
+[2026-04-09 14:26:30]	[done]
+	build successfully !
+
+[2026-04-09 14:31:19]	[done]
+	build successfully !
+
+[2026-04-09 14:35:34]	[done]
+	build successfully !
+
+[2026-04-10 10:30:50]	[done]
+	build successfully !
+
+[2026-04-10 10:31:51]	[done]
+	build successfully !
+
+[2026-04-10 10:37:36]	[done]
+	build successfully !
+
+[2026-04-10 10:42:06]	[done]
+	build successfully !
+
+[2026-04-10 10:47:36]	[done]
+	build successfully !
+
+[2026-04-10 10:49:09]	compilation failed at : "e:\Loongson\demo-window\demo-window\demo\25.wavepeak_measure\target\main.c", exit code: 1
+command: 
+  "E:\Loongson\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -c -xc -std=c11 -IUserInc -Iinclude -Ilibs -g -O0 -fsigned-char -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/target/main.o -MMD ./target/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+In file included from include/ls1d_std_uart.h:17,
+                 from UserInc/Main.h:19,
+                 from ./target/main.c:2:
+./target/main.c: In function 'main':
+./target/main.c:129:37: error: 'gate2_preno' undeclared (first use in this function); did you mean 'gate2_len'?
+     printf("wave_peak%d = %d \r\n", gate2_preno,reg);
+                                     ^~~~~~~~~~~
+include/../include/ls1d_std_printf.h:20:53: note: in definition of macro 'printf'
+ #define printf(fmt,args...)         myprintf(fmt ,##args)
+                                                     ^~~~
+./target/main.c:129:37: note: each undeclared identifier is reported only once for each function it appears in
+     printf("wave_peak%d = %d \r\n", gate2_preno,reg);
+                                     ^~~~~~~~~~~
+include/../include/ls1d_std_printf.h:20:53: note: in definition of macro 'printf'
+ #define printf(fmt,args...)         myprintf(fmt ,##args)
+                                                     ^~~~
+
+[2026-04-10 10:50:15]	[done]
+	build successfully !
+
+[2026-04-10 10:54:10]	[done]
+	build successfully !
+

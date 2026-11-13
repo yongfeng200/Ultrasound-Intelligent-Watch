@@ -1,0 +1,3 @@
+tool: GCC
+fileName: spi_serial_flash.map
+elfName: spi_serial_flash.elf

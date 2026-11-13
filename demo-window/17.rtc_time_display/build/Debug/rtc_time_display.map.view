@@ -1,0 +1,3 @@
+tool: GCC
+fileName: rtc_time_display.map
+elfName: rtc_time_display.elf

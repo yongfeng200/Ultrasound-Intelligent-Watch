@@ -1,0 +1,146 @@
+{
+    "name": "flash_internal_data",
+    "target": "Debug",
+    "toolchain": "ANY_GCC",
+    "toolchainLocation": "c:\\Users\\vkaok\\Desktop\\ls1d100_vscode\\la32-tool",
+    "toolchainCfgFile": "c:\\Users\\vkaok\\.vscode\\extensions\\cl.eide-3.20.1\\res\\data\\models\\win32/any.gcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 12,
+    "rootDir": "d:\\windows\\demo\\18.flash_internal_data",
+    "dumpPath": "build\\Debug",
+    "outDir": "build\\Debug",
+    "incDirs": [
+        "UserInc",
+        "include"
+    ],
+    "libDirs": [],
+    "defines": [],
+    "sourceList": [
+        "UserSrc/Filter.c",
+        "UserSrc/GlobalDef.c",
+        "UserSrc/UserClock.c",
+        "UserSrc/UserGpio.c",
+        "UserSrc/UserI2c.c",
+        "UserSrc/UserLcd.c",
+        "UserSrc/UserMeasure.c",
+        "UserSrc/UserRtc.c",
+        "UserSrc/UserTimer.c",
+        "UserSrc/UserUart.c",
+        "UserSrc/w25q16.c",
+        "driver/ls1d_std_adc.c",
+        "driver/ls1d_std_clock.c",
+        "driver/ls1d_std_exti.c",
+        "driver/ls1d_std_flash.c",
+        "driver/ls1d_std_gpio.c",
+        "driver/ls1d_std_i2c.c",
+        "driver/ls1d_std_lcd.c",
+        "driver/ls1d_std_measure.c",
+        "driver/ls1d_std_power.c",
+        "driver/ls1d_std_printf.c",
+        "driver/ls1d_std_rtc.c",
+        "driver/ls1d_std_spi.c",
+        "driver/ls1d_std_str_other.c",
+        "driver/ls1d_std_timer.c",
+        "driver/ls1d_std_uart.c",
+        "driver/ls1d_std_wdg.c",
+        "target/ls1d_std_Interrupt.c",
+        "target/main.c",
+        "target/sonar.S",
+        "target/start.S"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1732863959238.7092,
+    "options": {
+        "version": 1,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [
+            {
+                "name": "make hex",
+                "disable": false,
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O ihex \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.hex\""
+            },
+            {
+                "name": "make bin",
+                "disable": false,
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O binary \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.bin\""
+            },
+            {
+                "name": "make asm",
+                "disable": false,
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objdump\" -alDS \"${OutDir}/${TargetName}.elf\" > \"${OutDir}/${TargetName}.s\""
+            }
+        ],
+        "global": {
+            "toolPrefix": "loongarch32-linux-gnusf-"
+        },
+        "c/cpp-compiler": {
+            "C_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c",
+            "CXX_FLAGS": "-c -xc++"
+        },
+        "asm-compiler": {
+            "ASM_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c"
+        },
+        "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "linker-type": "ld",
+            "LD_FLAGS": "-G 0 -static -Ttext 0x1C000000 --gc-sections -o ${ProjectName}.elf",
+            "object-order": [
+                {
+                    "pattern": "**/.obj/target/start.o",
+                    "order": 1
+                },
+                {
+                    "pattern": "**/.obj/target/sonar.o",
+                    "order": 2
+                },
+                {
+                    "pattern": "**/.obj/target/main.o",
+                    "order": 3
+                }
+            ],
+            "$use": "linker-ld",
+            "linker-script": [
+                "d:/windows/demo/18.flash_internal_data/ld.script"
+            ]
+        }
+    },
+    "env": {
+        "workspaceFolder": "d:\\windows\\demo\\18.flash_internal_data",
+        "workspaceFolderBasename": "18.flash_internal_data",
+        "OutDir": "d:\\windows\\demo\\18.flash_internal_data\\build\\Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Debug",
+        "ProjectName": "flash_internal_data",
+        "ConfigName": "Debug",
+        "ProjectRoot": "d:\\windows\\demo\\18.flash_internal_data",
+        "ExecutableName": "d:\\windows\\demo\\18.flash_internal_data\\build\\Debug\\flash_internal_data",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\vkaok\\.vscode\\extensions\\cl.eide-3.20.1\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_TOOL_OPENOCD": "C:\\Users\\vkaok\\Desktop\\ls1d100_vscode\\openocd\\bin",
+        "EIDE_TOOL_OPENOCD_7A1ADFBEC_MINGW32": "C:\\Users\\vkaok\\.eide\\tools\\openocd_7a1adfbec_mingw32\\bin",
+        "ToolchainRoot": "c:\\Users\\vkaok\\Desktop\\ls1d100_vscode\\la32-tool"
+    },
+    "sysPaths": [],
+    "sha": {
+        "c/cpp-defines": "d751713988987e9331980363e24189ce",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "32342a677c44755557372326000e0014",
+        "global": "4d2dfc27f286186b7952e9a2fa68b4b7",
+        "c/cpp-compiler": "61d02dbe63552ed7af33e41aa730a339",
+        "asm-compiler": "292195db36c062c794d6ca189290f16e",
+        "linker": "3a3efa96e33e6542d82de35c8bea9139"
+    }
+}

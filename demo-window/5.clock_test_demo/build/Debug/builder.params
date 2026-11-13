@@ -1,0 +1,129 @@
+{
+    "name": "clock_test_demo",
+    "target": "Debug",
+    "toolchain": "ANY_GCC",
+    "toolchainLocation": "d:\\工作\\低成本JTAG\\最终资料\\提供资料\\demo-window\\la32-tool",
+    "toolchainCfgFile": "c:\\Users\\vkaok\\.vscode\\extensions\\cl.eide-3.21.3\\res\\data\\models\\win32/any.gcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 12,
+    "rootDir": "d:\\工作\\低成本JTAG\\最终资料\\提供资料\\demo-window\\demo-window\\5.clock_test_demo",
+    "dumpPath": "build\\Debug",
+    "outDir": "build\\Debug",
+    "incDirs": [
+        "UserInc",
+        "include"
+    ],
+    "libDirs": [],
+    "defines": [],
+    "sourceList": [
+        "UserSrc/GlobalDef.c",
+        "UserSrc/UserClock.c",
+        "UserSrc/UserGpio.c",
+        "UserSrc/UserUart.c",
+        "driver/ls1d_std_adc.c",
+        "driver/ls1d_std_clock.c",
+        "driver/ls1d_std_exti.c",
+        "driver/ls1d_std_flash.c",
+        "driver/ls1d_std_gpio.c",
+        "driver/ls1d_std_i2c.c",
+        "driver/ls1d_std_lcd.c",
+        "driver/ls1d_std_measure.c",
+        "driver/ls1d_std_power.c",
+        "driver/ls1d_std_printf.c",
+        "driver/ls1d_std_rtc.c",
+        "driver/ls1d_std_spi.c",
+        "driver/ls1d_std_str_other.c",
+        "driver/ls1d_std_timer.c",
+        "driver/ls1d_std_uart.c",
+        "driver/ls1d_std_wdg.c",
+        "target/ls1d_std_Interrupt.c",
+        "target/main.c",
+        "target/sonar.S",
+        "target/start.S"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 1,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [
+            {
+                "name": "make hex",
+                "disable": false,
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O ihex \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.hex\""
+            },
+            {
+                "name": "make bin",
+                "disable": false,
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O binary \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.bin\""
+            },
+            {
+                "name": "make asm",
+                "disable": false,
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objdump\" -alDS \"${OutDir}/${TargetName}.elf\" > \"${OutDir}/${TargetName}.s\""
+            }
+        ],
+        "global": {
+            "toolPrefix": "loongarch32-linux-gnusf-"
+        },
+        "c/cpp-compiler": {
+            "C_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c",
+            "CXX_FLAGS": "-c -xc++"
+        },
+        "asm-compiler": {
+            "ASM_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c"
+        },
+        "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "linker-type": "ld",
+            "LD_FLAGS": "-G 0 -static -Ttext 0x1C000000 --gc-sections -o ${ProjectName}.elf",
+            "object-order": [
+                {
+                    "pattern": "**/.obj/target/start.o",
+                    "order": 1
+                },
+                {
+                    "pattern": "**/.obj/target/sonar.o",
+                    "order": 2
+                },
+                {
+                    "pattern": "**/.obj/target/main.o",
+                    "order": 3
+                }
+            ],
+            "$use": "linker-ld",
+            "linker-script": [
+                "d:/工作/低成本JTAG/最终资料/提供资料/demo-window/demo-window/5.clock_test_demo/ld.script"
+            ]
+        }
+    },
+    "env": {
+        "workspaceFolder": "d:\\工作\\低成本JTAG\\最终资料\\提供资料\\demo-window\\demo-window\\5.clock_test_demo",
+        "workspaceFolderBasename": "5.clock_test_demo",
+        "OutDir": "d:\\工作\\低成本JTAG\\最终资料\\提供资料\\demo-window\\demo-window\\5.clock_test_demo\\build\\Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Debug",
+        "ProjectName": "clock_test_demo",
+        "ConfigName": "Debug",
+        "ProjectRoot": "d:\\工作\\低成本JTAG\\最终资料\\提供资料\\demo-window\\demo-window\\5.clock_test_demo",
+        "ExecutableName": "d:\\工作\\低成本JTAG\\最终资料\\提供资料\\demo-window\\demo-window\\5.clock_test_demo\\build\\Debug\\clock_test_demo",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\vkaok\\.vscode\\extensions\\cl.eide-3.21.3\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_MSYS": "C:\\Users\\vkaok\\.eide\\bin\\builder\\msys\\bin",
+        "ToolchainRoot": "d:\\工作\\低成本JTAG\\最终资料\\提供资料\\demo-window\\la32-tool"
+    },
+    "sysPaths": []
+}

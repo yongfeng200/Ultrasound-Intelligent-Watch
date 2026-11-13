@@ -1,0 +1,3 @@
+tool: GCC
+fileName: wdg_demo.map
+elfName: wdg_demo.elf

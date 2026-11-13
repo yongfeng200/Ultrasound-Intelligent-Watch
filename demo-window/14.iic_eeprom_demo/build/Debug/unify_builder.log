@@ -1,0 +1,76 @@
+[2024-12-02 15:15:18]	[info] incremental build: 31 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\iic_eeprom_demo\UserSrc\Filter.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserClock.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserI2c.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserLcd.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserMeasure.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserRtc.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserTimer.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\UserUart.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\UserSrc\w25q16.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_adc.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_clock.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_exti.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\target\main.c': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\target\sonar.S': object (.o) file not exist
+'d:\windows\demo\iic_eeprom_demo\target\start.S': object (.o) file not exist
+
+[2024-12-02 15:15:19]	[done]
+	build successfully !
+
+[2025-05-23 09:24:53]	[info] incremental build: 31 source files changed
+These source files will be recompiled
+---
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\Filter.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\GlobalDef.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserClock.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserGpio.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserI2c.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserLcd.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserMeasure.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserRtc.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserTimer.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\UserUart.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\UserSrc\w25q16.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_adc.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_clock.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_exti.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_flash.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_gpio.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_i2c.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_lcd.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_measure.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_power.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_printf.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_rtc.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_spi.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_str_other.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_timer.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_uart.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\driver\ls1d_std_wdg.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\target\ls1d_std_Interrupt.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\target\main.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\target\sonar.S': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\14.iic_eeprom_demo\target\start.S': compiler options has been changed.
+
+[2025-05-23 09:24:55]	[done]
+	build successfully !
+

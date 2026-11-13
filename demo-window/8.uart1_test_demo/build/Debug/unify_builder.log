@@ -1,0 +1,143 @@
+[2024-12-02 14:49:46]	[info] incremental build: 29 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\uart1_test_demo\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserClock.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserI2c.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserLcd.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserRtc.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserTimer.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserUart.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\w25q16.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_adc.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_clock.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_exti.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\main.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\sonar.S': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\start.S': object (.o) file not exist
+
+[2024-12-02 14:49:46]	compilation failed at : "d:\windows\demo\uart1_test_demo\UserSrc\w25q16.c", exit code: 1
+command: 
+  "c:\Users\vkaok\Desktop\ls1d100_vscode\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -Iinclude -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/UserSrc/w25q16.o -MMD ./UserSrc/w25q16.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserSrc/GlobalDef.c:8:10: fatal error: GlobalDef.h: No such file or directory
+ #include "GlobalDef.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+./UserSrc/UserI2c.c:8:10: fatal error: UserI2c.h: No such file or directory
+ #include "UserI2c.h"
+          ^~~~~~~~~~~
+compilation terminated.
+./UserSrc/UserRtc.c:8:10: fatal error: UserRtc.h: No such file or directory
+ #include "UserRtc.h"
+          ^~~~~~~~~~~
+compilation terminated.
+./UserSrc/UserTimer.c:9:10: fatal error: UserTimer.h: No such file or directory
+ #include "UserTimer.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+./UserSrc/UserGpio.c:7:10: fatal error: GlobalDef.h: No such file or directory
+ #include "GlobalDef.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+./UserSrc/UserLcd.c:8:10: fatal error: UserLcd.h: No such file or directory
+ #include "UserLcd.h"
+          ^~~~~~~~~~~
+compilation terminated.
+./UserSrc/UserUart.c:8:10: fatal error: UserUart.h: No such file or directory
+ #include "UserUart.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+./UserSrc/w25q16.c:7:10: fatal error: w25q16.h: No such file or directory
+ #include "w25q16.h"
+          ^~~~~~~~~~
+compilation terminated.
+
+[2024-12-02 14:49:49]	[info] incremental build: 25 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\uart1_test_demo\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserI2c.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserLcd.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserRtc.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserTimer.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\UserUart.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\UserSrc\w25q16.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\main.c': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\sonar.S': object (.o) file not exist
+'d:\windows\demo\uart1_test_demo\target\start.S': object (.o) file not exist
+
+[2024-12-02 14:49:50]	[done]
+	build successfully !
+
+[2025-05-23 09:22:01]	Not found 'C Compiler' !, [path]: "d:\工作\低成本JTAG\最终资料\提供资料\demo-window\la32-tool\bin\gcc.exe"
+   at unify_builder.Program.Main(String[] args_)
+
+[2025-05-23 09:22:17]	[info] incremental build: 29 source files changed
+These source files will be recompiled
+---
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\GlobalDef.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\UserClock.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\UserGpio.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\UserI2c.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\UserLcd.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\UserRtc.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\UserTimer.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\UserUart.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\UserSrc\w25q16.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_adc.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_clock.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_exti.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_flash.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_gpio.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_i2c.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_lcd.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_measure.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_power.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_printf.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_rtc.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_spi.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_str_other.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_timer.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_uart.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\driver\ls1d_std_wdg.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\target\ls1d_std_Interrupt.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\target\main.c': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\target\sonar.S': compiler options has been changed.
+'d:\工作\低成本JTAG\最终资料\提供资料\demo-window\demo-window\8.uart1_test_demo\target\start.S': compiler options has been changed.
+
+[2025-05-23 09:22:18]	[done]
+	build successfully !
+

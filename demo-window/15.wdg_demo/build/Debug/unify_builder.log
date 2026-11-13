@@ -1,0 +1,41 @@
+[2024-12-02 15:27:10]	[info] incremental build: 31 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\15.wdg_demo\UserSrc\Filter.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserClock.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserI2c.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserLcd.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserMeasure.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserRtc.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserTimer.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\UserUart.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\UserSrc\w25q16.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_adc.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_clock.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_exti.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\target\main.c': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\target\sonar.S': object (.o) file not exist
+'d:\windows\demo\15.wdg_demo\target\start.S': object (.o) file not exist
+
+[2024-12-02 15:27:11]	[done]
+	build successfully !
+
+[2025-05-23 09:25:19]	[done]
+	build successfully !
+

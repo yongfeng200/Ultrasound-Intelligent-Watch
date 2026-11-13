@@ -1,0 +1,116 @@
+{
+  "name": "wdg_demo",
+  "type": "ANY-GCC",
+  "dependenceList": [],
+  "srcDirs": [
+    "driver",
+    "include",
+    "target",
+    "UserInc",
+    "UserSrc"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "6c488b0c6daf89b20b355a1642fc4679"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "ANY_GCC",
+      "compileConfig": {
+        "linkerScriptPath": "ld.script",
+        "options": "null"
+      },
+      "uploader": "Custom",
+      "uploadConfig": {
+        "bin": "",
+        "commandLine": "${workspaceFolder}\\openocd_flash_tool.bat program_and_verify ${ProjectName}.bin 0x1f000000",
+        "eraseChipCommand": "${workspaceFolder}\\openocd_flash_tool.bat erase_full"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "include",
+          "UserInc"
+        ],
+        "libList": [],
+        "defineList": []
+      },
+      "builderOptions": {
+        "ANY_GCC": {
+          "version": 1,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [
+            {
+              "name": "make hex",
+              "disable": false,
+              "abortAfterFailed": false,
+              "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O ihex \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.hex\""
+            },
+            {
+              "name": "make bin",
+              "disable": false,
+              "abortAfterFailed": false,
+              "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O binary \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.bin\""
+            },
+            {
+              "name": "make asm",
+              "disable": false,
+              "abortAfterFailed": false,
+              "command": "\"${CompilerFolder}/${CompilerPrefix}objdump\" -alDS \"${OutDir}/${TargetName}.elf\" > \"${OutDir}/${TargetName}.s\""
+            }
+          ],
+          "global": {},
+          "c/cpp-compiler": {
+            "C_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c",
+            "CXX_FLAGS": "-c -xc++"
+          },
+          "asm-compiler": {
+            "ASM_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c"
+          },
+          "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "linker-type": "ld",
+            "LD_FLAGS": "-G 0 -static -Ttext 0x1C000000 --gc-sections -o ${ProjectName}.elf",
+            "object-order": [
+              {
+                "pattern": "**/.obj/target/start.o",
+                "order": 1
+              },
+              {
+                "pattern": "**/.obj/target/sonar.o",
+                "order": 2
+              },
+              {
+                "pattern": "**/.obj/target/main.o",
+                "order": 3
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}

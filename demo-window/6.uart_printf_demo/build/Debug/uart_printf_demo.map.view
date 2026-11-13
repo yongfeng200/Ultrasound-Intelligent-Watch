@@ -1,0 +1,3 @@
+tool: GCC
+fileName: uart_printf_demo.map
+elfName: uart_printf_demo.elf

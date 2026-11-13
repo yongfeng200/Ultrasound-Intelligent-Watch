@@ -1,0 +1,38 @@
+[2026-11-07 14:43:00]	[info] incremental build: 31 source files changed
+These source files will be recompiled
+---
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\Filter.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserClock.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserI2c.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserLcd.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserMeasure.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserRtc.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserTimer.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\UserUart.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\UserSrc\w25q16.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_adc.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_clock.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_exti.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\target\main.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\target\sonar.S': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\26.sonar_lcd_measure\target\start.S': object (.o) file not exist
+
+[2026-11-07 14:43:01]	[done]
+	build successfully !
+

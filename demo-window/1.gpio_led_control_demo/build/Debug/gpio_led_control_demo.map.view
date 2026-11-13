@@ -1,0 +1,6 @@
+tool: GCC
+fileName: 'gpio_led_control_demo.map'
+elfName: 'gpio_led_control_demo.elf'
+compilerName: 'LoongArch GNU toolchain LA32 v2.0 (20230903)'
+compilerFullName: 'loongarch32-linux-gnusf-gcc.exe (LoongArch GNU toolchain LA32 v2.0 (20230903)) 8.3.0'
+compilerPath: 'D:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe'

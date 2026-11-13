@@ -1,0 +1,33 @@
+--gc-sections -T d:/工作/低成本JTAG/最终资料/提供资料/demo-window/demo-window/17.rtc_time_display/ld.script -G 0 -static -Ttext 0x1C000000 --gc-sections -o rtc_time_display.elf
+-Map=./build/Debug/rtc_time_display.map
+-o ./build/Debug/rtc_time_display.elf ./build/Debug/.obj/target/start.o
+./build/Debug/.obj/target/sonar.o
+./build/Debug/.obj/target/main.o
+./build/Debug/.obj/UserSrc/Filter.o
+./build/Debug/.obj/UserSrc/GlobalDef.o
+./build/Debug/.obj/UserSrc/UserClock.o
+./build/Debug/.obj/UserSrc/UserGpio.o
+./build/Debug/.obj/UserSrc/UserI2c.o
+./build/Debug/.obj/UserSrc/UserLcd.o
+./build/Debug/.obj/UserSrc/UserMeasure.o
+./build/Debug/.obj/UserSrc/UserRtc.o
+./build/Debug/.obj/UserSrc/UserTimer.o
+./build/Debug/.obj/UserSrc/UserUart.o
+./build/Debug/.obj/UserSrc/w25q16.o
+./build/Debug/.obj/driver/ls1d_std_adc.o
+./build/Debug/.obj/driver/ls1d_std_clock.o
+./build/Debug/.obj/driver/ls1d_std_exti.o
+./build/Debug/.obj/driver/ls1d_std_flash.o
+./build/Debug/.obj/driver/ls1d_std_gpio.o
+./build/Debug/.obj/driver/ls1d_std_i2c.o
+./build/Debug/.obj/driver/ls1d_std_lcd.o
+./build/Debug/.obj/driver/ls1d_std_measure.o
+./build/Debug/.obj/driver/ls1d_std_power.o
+./build/Debug/.obj/driver/ls1d_std_printf.o
+./build/Debug/.obj/driver/ls1d_std_rtc.o
+./build/Debug/.obj/driver/ls1d_std_spi.o
+./build/Debug/.obj/driver/ls1d_std_str_other.o
+./build/Debug/.obj/driver/ls1d_std_timer.o
+./build/Debug/.obj/driver/ls1d_std_uart.o
+./build/Debug/.obj/driver/ls1d_std_wdg.o
+./build/Debug/.obj/target/ls1d_std_Interrupt.o

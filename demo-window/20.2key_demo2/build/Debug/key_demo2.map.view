@@ -1,0 +1,3 @@
+tool: GCC
+fileName: key_demo2.map
+elfName: key_demo2.elf

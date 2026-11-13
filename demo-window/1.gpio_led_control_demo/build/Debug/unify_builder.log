@@ -1,0 +1,31 @@
+[2026-10-14 17:44:21]	[info] incremental build: 24 source files changed
+These source files will be recompiled
+---
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\UserSrc\UserClock.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\UserSrc\UserUart.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_adc.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_clock.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_exti.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\target\main.c': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\target\sonar.S': object (.o) file not exist
+'d:\WorkSpace2\上海电机学院\龙芯智能水表\LS1D-DEV-005-基于VScode的开发板例程\demo-window\demo-window\1.gpio_led_control_demo\target\start.S': object (.o) file not exist
+
+[2026-10-14 17:44:22]	[done]
+	build successfully !
+

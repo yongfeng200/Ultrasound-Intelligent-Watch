@@ -1,0 +1,7 @@
+LS1D ultrasonic water-meter simulation summary
+Generated: 2026-10-07 10:42:08
+Samples: 11
+Valid ratio: 1.000000
+Velocity MAE (m/s): 0.471185985
+Velocity RMSE (m/s): 0.47335708
+Velocity bias (m/s): -0.471185985

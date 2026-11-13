@@ -1,0 +1,3 @@
+tool: GCC
+fileName: uart_data_receive_demo.map
+elfName: uart_data_receive_demo.elf

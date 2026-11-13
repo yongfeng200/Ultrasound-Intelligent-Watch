@@ -1,0 +1,26 @@
+--gc-sections -T d:/windows/demo/uart_printf_demo/ld.script -G 0 -static -Ttext 0x1C000000 --gc-sections -o uart_printf_demo.elf
+-Map=./build/Debug/uart_printf_demo.map
+-o ./build/Debug/uart_printf_demo.elf ./build/Debug/.obj/target/start.o
+./build/Debug/.obj/target/sonar.o
+./build/Debug/.obj/target/main.o
+./build/Debug/.obj/UserSrc/GlobalDef.o
+./build/Debug/.obj/UserSrc/UserClock.o
+./build/Debug/.obj/UserSrc/UserGpio.o
+./build/Debug/.obj/UserSrc/UserUart.o
+./build/Debug/.obj/driver/ls1d_std_adc.o
+./build/Debug/.obj/driver/ls1d_std_clock.o
+./build/Debug/.obj/driver/ls1d_std_exti.o
+./build/Debug/.obj/driver/ls1d_std_flash.o
+./build/Debug/.obj/driver/ls1d_std_gpio.o
+./build/Debug/.obj/driver/ls1d_std_i2c.o
+./build/Debug/.obj/driver/ls1d_std_lcd.o
+./build/Debug/.obj/driver/ls1d_std_measure.o
+./build/Debug/.obj/driver/ls1d_std_power.o
+./build/Debug/.obj/driver/ls1d_std_printf.o
+./build/Debug/.obj/driver/ls1d_std_rtc.o
+./build/Debug/.obj/driver/ls1d_std_spi.o
+./build/Debug/.obj/driver/ls1d_std_str_other.o
+./build/Debug/.obj/driver/ls1d_std_timer.o
+./build/Debug/.obj/driver/ls1d_std_uart.o
+./build/Debug/.obj/driver/ls1d_std_wdg.o
+./build/Debug/.obj/target/ls1d_std_Interrupt.o

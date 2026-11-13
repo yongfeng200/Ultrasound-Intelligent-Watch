@@ -1,0 +1,3 @@
+tool: GCC
+fileName: sonar_cruise_measure.map
+elfName: sonar_cruise_measure.elf

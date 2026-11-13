@@ -1,0 +1,1 @@
+-Iinclude -IUserInc -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/driver/ls1d_std_exti.o -MMD ./driver/ls1d_std_exti.c

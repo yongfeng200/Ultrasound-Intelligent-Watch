@@ -1,0 +1,3 @@
+tool: GCC
+fileName: uart_infrared_transceiver.map
+elfName: uart_infrared_transceiver.elf

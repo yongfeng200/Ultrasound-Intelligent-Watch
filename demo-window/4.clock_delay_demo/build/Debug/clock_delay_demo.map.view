@@ -1,0 +1,3 @@
+tool: GCC
+fileName: clock_delay_demo.map
+elfName: clock_delay_demo.elf

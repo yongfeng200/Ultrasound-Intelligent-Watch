@@ -1,0 +1,3 @@
+tool: GCC
+fileName: iic_eeprom_demo.map
+elfName: iic_eeprom_demo.elf

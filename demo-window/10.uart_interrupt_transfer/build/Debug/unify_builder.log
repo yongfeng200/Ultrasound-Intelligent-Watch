@@ -1,0 +1,39 @@
+[2024-12-02 15:05:53]	[info] incremental build: 29 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\UserClock.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\UserI2c.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\UserLcd.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\UserRtc.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\UserTimer.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\UserUart.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\UserSrc\w25q16.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_adc.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_clock.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_exti.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\target\main.c': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\target\sonar.S': object (.o) file not exist
+'d:\windows\demo\uart_interrupt_transfer\target\start.S': object (.o) file not exist
+
+[2024-12-02 15:05:54]	[done]
+	build successfully !
+
+[2025-05-23 09:23:14]	[done]
+	build successfully !
+

@@ -1,0 +1,3 @@
+tool: GCC
+fileName: low_power_control.map
+elfName: low_power_control.elf

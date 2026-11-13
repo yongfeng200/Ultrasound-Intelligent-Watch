@@ -1,0 +1,1 @@
+--gc-sections -T d:/windows/template/ld.script -G 0 -static -Ttext 0x1C000000 --gc-sections -o template.elf -Map=./build/Debug/template.map

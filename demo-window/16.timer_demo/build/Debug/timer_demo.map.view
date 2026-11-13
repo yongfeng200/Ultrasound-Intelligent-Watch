@@ -1,0 +1,3 @@
+tool: GCC
+fileName: timer_demo.map
+elfName: timer_demo.elf

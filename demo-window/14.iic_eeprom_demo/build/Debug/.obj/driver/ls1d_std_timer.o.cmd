@@ -1,0 +1,1 @@
+"d:\工作\低成本JTAG\最终资料\提供资料\demo-window\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -IUserInc -Iinclude -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/driver/ls1d_std_timer.o -MMD ./driver/ls1d_std_timer.c

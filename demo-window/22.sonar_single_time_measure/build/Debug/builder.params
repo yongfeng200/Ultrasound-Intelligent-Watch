@@ -1,0 +1,142 @@
+{
+    "name": "sonar_single_time_measure",
+    "target": "Debug",
+    "toolchain": "ANY_GCC",
+    "toolchainLocation": "D:\\WorkSpace2\\上海电机学院\\龙芯智能水表\\LS1D-DEV-005-基于VScode的开发板例程\\demo-window\\la32-tool",
+    "toolchainCfgFile": "c:\\Users\\98470\\.vscode\\extensions\\cl.eide-3.27.2\\res\\data\\models/any.gcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 32,
+    "rootDir": "d:\\WorkSpace2\\上海电机学院\\龙芯智能水表\\LS1D-DEV-005-基于VScode的开发板例程\\demo-window\\demo-window\\22.sonar_single_time_measure",
+    "dumpPath": "build\\Debug",
+    "outDir": "build\\Debug",
+    "incDirs": [
+        "UserInc",
+        "include"
+    ],
+    "libDirs": [],
+    "defines": [],
+    "sourceList": [
+        "UserSrc/Filter.c",
+        "UserSrc/GlobalDef.c",
+        "UserSrc/UserClock.c",
+        "UserSrc/UserGpio.c",
+        "UserSrc/UserI2c.c",
+        "UserSrc/UserLcd.c",
+        "UserSrc/UserMeasure.c",
+        "UserSrc/UserRtc.c",
+        "UserSrc/UserTimer.c",
+        "UserSrc/UserUart.c",
+        "UserSrc/w25q16.c",
+        "driver/ls1d_std_adc.c",
+        "driver/ls1d_std_clock.c",
+        "driver/ls1d_std_exti.c",
+        "driver/ls1d_std_flash.c",
+        "driver/ls1d_std_gpio.c",
+        "driver/ls1d_std_i2c.c",
+        "driver/ls1d_std_lcd.c",
+        "driver/ls1d_std_measure.c",
+        "driver/ls1d_std_power.c",
+        "driver/ls1d_std_printf.c",
+        "driver/ls1d_std_rtc.c",
+        "driver/ls1d_std_spi.c",
+        "driver/ls1d_std_str_other.c",
+        "driver/ls1d_std_timer.c",
+        "driver/ls1d_std_uart.c",
+        "driver/ls1d_std_wdg.c",
+        "target/ls1d_std_Interrupt.c",
+        "target/main.c",
+        "target/sonar.S",
+        "target/start.S"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 2,
+        "afterBuildTasks": [
+            {
+                "name": "make hex",
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O ihex \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.hex\"",
+                "disable": false
+            },
+            {
+                "name": "make bin",
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objcopy\" -O binary \"${OutDir}/${TargetName}.elf\" \"${OutDir}/${TargetName}.bin\"",
+                "disable": false
+            },
+            {
+                "name": "make asm",
+                "abortAfterFailed": false,
+                "command": "\"${CompilerFolder}/${CompilerPrefix}objdump\" -alDS \"${OutDir}/${TargetName}.elf\" > \"${OutDir}/${TargetName}.s\"",
+                "disable": false
+            }
+        ],
+        "asm-compiler": {
+            "ASM_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w"
+        },
+        "beforeBuildTasks": [],
+        "c/cpp-compiler": {
+            "CXX_FLAGS": "",
+            "C_FLAGS": "-g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c",
+            "language-c": "c11",
+            "language-cpp": "gnu++11",
+            "signed-char": true
+        },
+        "global": {
+            "output-debug-info": "enable",
+            "toolPrefix": "loongarch32-linux-gnusf-"
+        },
+        "linker": {
+            "$disableOutputTask": true,
+            "LD_FLAGS": "-G 0 -static -Ttext 0x1C000000 --gc-sections -o ${ProjectName}.elf",
+            "linker-type": "ld",
+            "object-order": [
+                {
+                    "order": 1,
+                    "pattern": "**/.obj/target/start.o"
+                },
+                {
+                    "order": 2,
+                    "pattern": "**/.obj/target/sonar.o"
+                },
+                {
+                    "order": 3,
+                    "pattern": "**/.obj/target/main.o"
+                }
+            ],
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "$use": "linker-ld",
+            "linker-script": [
+                "d:/WorkSpace2/上海电机学院/龙芯智能水表/LS1D-DEV-005-基于VScode的开发板例程/demo-window/demo-window/22.sonar_single_time_measure/ld.script"
+            ]
+        }
+    },
+    "env": {
+        "workspaceFolder": "d:\\WorkSpace2\\上海电机学院\\龙芯智能水表\\LS1D-DEV-005-基于VScode的开发板例程\\demo-window\\demo-window\\22.sonar_single_time_measure",
+        "workspaceFolderBasename": "22.sonar_single_time_measure",
+        "OutDir": "d:\\WorkSpace2\\上海电机学院\\龙芯智能水表\\LS1D-DEV-005-基于VScode的开发板例程\\demo-window\\demo-window\\22.sonar_single_time_measure\\build\\Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Debug",
+        "ProjectName": "sonar_single_time_measure",
+        "ConfigName": "Debug",
+        "ProjectRoot": "d:\\WorkSpace2\\上海电机学院\\龙芯智能水表\\LS1D-DEV-005-基于VScode的开发板例程\\demo-window\\demo-window\\22.sonar_single_time_measure",
+        "ExecutableName": "d:\\WorkSpace2\\上海电机学院\\龙芯智能水表\\LS1D-DEV-005-基于VScode的开发板例程\\demo-window\\demo-window\\22.sonar_single_time_measure\\build\\Debug\\sonar_single_time_measure",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\98470\\.vscode\\extensions\\cl.eide-3.27.2\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.1.1",
+        "EIDE_MSYS": "C:\\Users\\98470\\.eide\\bin\\builder\\msys\\bin",
+        "EIDE_PY3_CMD": "C:\\Users\\98470\\.eide\\bin\\python36\\python3.exe",
+        "ToolchainRoot": "D:\\WorkSpace2\\上海电机学院\\龙芯智能水表\\LS1D-DEV-005-基于VScode的开发板例程\\demo-window\\la32-tool"
+    },
+    "sysPaths": []
+}

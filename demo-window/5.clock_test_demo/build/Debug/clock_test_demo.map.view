@@ -1,0 +1,3 @@
+tool: GCC
+fileName: clock_test_demo.map
+elfName: clock_test_demo.elf

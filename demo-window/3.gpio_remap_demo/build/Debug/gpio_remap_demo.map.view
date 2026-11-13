@@ -1,0 +1,3 @@
+tool: GCC
+fileName: gpio_remap_demo.map
+elfName: gpio_remap_demo.elf

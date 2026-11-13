@@ -1,0 +1,3 @@
+tool: GCC
+fileName: adc_voltage_demo.map
+elfName: adc_voltage_demo.elf

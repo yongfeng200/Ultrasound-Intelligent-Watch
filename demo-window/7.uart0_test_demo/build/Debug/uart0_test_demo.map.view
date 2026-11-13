@@ -1,0 +1,3 @@
+tool: GCC
+fileName: uart0_test_demo.map
+elfName: uart0_test_demo.elf

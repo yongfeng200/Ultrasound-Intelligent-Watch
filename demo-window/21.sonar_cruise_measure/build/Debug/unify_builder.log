@@ -1,0 +1,161 @@
+[2024-12-02 15:34:52]	[info] incremental build: 31 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\Filter.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\GlobalDef.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserClock.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserGpio.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserI2c.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserLcd.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserMeasure.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserRtc.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserTimer.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\UserUart.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\UserSrc\w25q16.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_adc.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_clock.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_exti.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_flash.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_gpio.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_i2c.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_lcd.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_measure.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_power.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_printf.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_rtc.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_spi.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_str_other.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_timer.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_wdg.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\target\ls1d_std_Interrupt.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\target\main.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\target\sonar.S': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\target\start.S': object (.o) file not exist
+
+[2024-12-02 15:34:53]	compilation failed at : "d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_uart.c", exit code: 1
+command: 
+  "c:\Users\vkaok\Desktop\ls1d100_vscode\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -IUserInc -Iinclude -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/driver/ls1d_std_uart.o -MMD ./driver/ls1d_std_uart.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./driver/ls1d_std_uart.c: In function 'UART_MbusInit':
+./driver/ls1d_std_uart.c:454:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table4'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table4 =0x02;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:455:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table5'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table5 =0x03;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:456:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table6'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table6 =0x04;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:457:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table7'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table7 =0x05;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:458:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table8'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table8 =0x06;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:460:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'PRE_CHAR'; did you mean 'FSM_CHAR'?
+     MBUS->PRE_CHAR =0xfe;
+           ^~~~~~~~
+           FSM_CHAR
+./driver/ls1d_std_uart.c:473:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table2'; did you mean 'BR_Table0'?
+     MBUS->BR_Table2 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:474:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table3'; did you mean 'BR_Table0'?
+     MBUS->BR_Table3 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:475:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table4'; did you mean 'BR_Table0'?
+     MBUS->BR_Table4 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:476:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table5'; did you mean 'BR_Table0'?
+     MBUS->BR_Table5 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:477:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table6'; did you mean 'BR_Table0'?
+     MBUS->BR_Table6 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:478:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table7'; did you mean 'BR_Table0'?
+     MBUS->BR_Table7 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+
+[2024-12-02 15:34:57]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\target\start.S': object (.o) file not exist
+
+[2024-12-02 15:34:57]	compilation failed at : "d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_uart.c", exit code: 1
+command: 
+  "c:\Users\vkaok\Desktop\ls1d100_vscode\la32-tool\bin\loongarch32-linux-gnusf-gcc.exe" -IUserInc -Iinclude -g -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w -c -o ./build/Debug/.obj/driver/ls1d_std_uart.o -MMD ./driver/ls1d_std_uart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./driver/ls1d_std_uart.c: In function 'UART_MbusInit':
+./driver/ls1d_std_uart.c:454:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table4'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table4 =0x02;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:455:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table5'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table5 =0x03;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:456:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table6'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table6 =0x04;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:457:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table7'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table7 =0x05;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:458:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'FSM_Table8'; did you mean 'FSM_Table0'?
+     MBUS->FSM_Table8 =0x06;
+           ^~~~~~~~~~
+           FSM_Table0
+./driver/ls1d_std_uart.c:460:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'PRE_CHAR'; did you mean 'FSM_CHAR'?
+     MBUS->PRE_CHAR =0xfe;
+           ^~~~~~~~
+           FSM_CHAR
+./driver/ls1d_std_uart.c:473:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table2'; did you mean 'BR_Table0'?
+     MBUS->BR_Table2 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:474:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table3'; did you mean 'BR_Table0'?
+     MBUS->BR_Table3 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:475:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table4'; did you mean 'BR_Table0'?
+     MBUS->BR_Table4 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:476:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table5'; did you mean 'BR_Table0'?
+     MBUS->BR_Table5 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:477:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table6'; did you mean 'BR_Table0'?
+     MBUS->BR_Table6 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+./driver/ls1d_std_uart.c:478:11: error: 'MBUS_TypeDef' {aka 'struct <anonymous>'} has no member named 'BR_Table7'; did you mean 'BR_Table0'?
+     MBUS->BR_Table7 =0xaa;
+           ^~~~~~~~~
+           BR_Table0
+
+[2024-12-02 15:36:47]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\windows\demo\21.sonar_cruise_measure\driver\ls1d_std_uart.c': object (.o) file not exist
+'d:\windows\demo\21.sonar_cruise_measure\target\start.S': object (.o) file not exist
+
+[2024-12-02 15:36:47]	[done]
+	build successfully !
+

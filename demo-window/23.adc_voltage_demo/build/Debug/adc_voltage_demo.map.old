@@ -1,0 +1,1605 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+firdata             0x1c              ./build/Debug/.obj/UserSrc/Filter.o
+MaxDiff             0x2               ./build/Debug/.obj/driver/ls1d_std_adc.o
+g_FBn_Buff          0xc               ./build/Debug/.obj/driver/ls1d_std_lcd.o
+MaxAdc              0x2               ./build/Debug/.obj/driver/ls1d_std_adc.o
+debugflag           0x4               ./build/Debug/.obj/target/main.o
+temper_shift        0x4               ./build/Debug/.obj/UserSrc/UserMeasure.o
+inte8m              0x4               ./build/Debug/.obj/driver/ls1d_std_clock.o
+MeasureRecord       0x40              ./build/Debug/.obj/UserSrc/UserMeasure.o
+g_adc_diff          0x2               ./build/Debug/.obj/driver/ls1d_std_adc.o
+rawdata             0x1c              ./build/Debug/.obj/UserSrc/Filter.o
+forward_Q           0x4               ./build/Debug/.obj/UserSrc/UserMeasure.o
+MinAdc              0x2               ./build/Debug/.obj/driver/ls1d_std_adc.o
+g_adc_data          0x2               ./build/Debug/.obj/driver/ls1d_std_adc.o
+inte32K             0x4               ./build/Debug/.obj/driver/ls1d_std_clock.o
+MidAdc              0x2               ./build/Debug/.obj/driver/ls1d_std_adc.o
+backward_Q          0x4               ./build/Debug/.obj/UserSrc/UserMeasure.o
+Flash_pe            0x4               ./build/Debug/.obj/driver/ls1d_std_flash.o
+zero_position       0xc               ./build/Debug/.obj/UserSrc/UserMeasure.o
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x14 ./build/Debug/.obj/target/start.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/target/start.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/target/start.o
+ .text          0x0000000000000000      0x180 ./build/Debug/.obj/target/sonar.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/target/sonar.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/target/sonar.o
+ .debug_line    0x0000000000000000       0x93 ./build/Debug/.obj/target/sonar.o
+ .debug_info    0x0000000000000000       0x26 ./build/Debug/.obj/target/sonar.o
+ .debug_abbrev  0x0000000000000000       0x14 ./build/Debug/.obj/target/sonar.o
+ .debug_aranges
+                0x0000000000000000       0x20 ./build/Debug/.obj/target/sonar.o
+ .debug_str     0x0000000000000000       0x43 ./build/Debug/.obj/target/sonar.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/target/main.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/target/main.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/target/main.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/Filter.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/Filter.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/Filter.o
+ .text.InitRectWindowFilter
+                0x0000000000000000       0x30 ./build/Debug/.obj/UserSrc/Filter.o
+ .text.InitMedianFilter
+                0x0000000000000000       0x40 ./build/Debug/.obj/UserSrc/Filter.o
+ .text.FreeFilter
+                0x0000000000000000       0x30 ./build/Debug/.obj/UserSrc/Filter.o
+ .text.RectWindowFilter
+                0x0000000000000000       0xf0 ./build/Debug/.obj/UserSrc/Filter.o
+ .text.GetMeanValue
+                0x0000000000000000       0x40 ./build/Debug/.obj/UserSrc/Filter.o
+ .rodata.MedianFilter.str1.4
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/Filter.o
+ .text.MedianFilter
+                0x0000000000000000      0x3a0 ./build/Debug/.obj/UserSrc/Filter.o
+ .rodata.cst4   0x0000000000000000        0x8 ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_info    0x0000000000000000      0x5ec ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_abbrev  0x0000000000000000      0x1ec ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_loc     0x0000000000000000      0x56f ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_aranges
+                0x0000000000000000       0x48 ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_ranges  0x0000000000000000       0x38 ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_line    0x0000000000000000      0x510 ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_str     0x0000000000000000      0x2c6 ./build/Debug/.obj/UserSrc/Filter.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/Filter.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/Filter.o
+ .debug_frame   0x0000000000000000       0x98 ./build/Debug/.obj/UserSrc/Filter.o
+ COMMON         0x0000000000000000       0x38 ./build/Debug/.obj/UserSrc/Filter.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .text.SetSystemErrorLogInfo
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .text.ResetSystemErrorLogInfo
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .text.GetSystemErrorLogInfo
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .bss.ErrorLog  0x0000000000000000        0x2 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .debug_info    0x0000000000000000       0xd1 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .debug_abbrev  0x0000000000000000       0xbf ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .debug_ranges  0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .debug_line    0x0000000000000000       0x9e ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .debug_str     0x0000000000000000      0x190 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .debug_frame   0x0000000000000000       0x40 ./build/Debug/.obj/UserSrc/GlobalDef.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserClock.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserClock.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserClock.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_LowPower
+                0x0000000000000000       0xa0 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_LCDResume
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_AdcResume
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_Uart1ReInit
+                0x0000000000000000       0x40 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_Uart0Resume
+                0x0000000000000000       0x30 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_Uart1Resume
+                0x0000000000000000       0x40 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.Uart0_LowPower
+                0x0000000000000000       0x90 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.Uart1_LowPower
+                0x0000000000000000       0x80 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.I2C_LowPower
+                0x0000000000000000       0x70 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_I2cResume
+                0x0000000000000000       0x40 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.SPI_LowPower
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text.GPIO_SpiResume
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserI2c.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserI2c.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserI2c.o
+ .debug_info    0x0000000000000000       0x67 ./build/Debug/.obj/UserSrc/UserI2c.o
+ .debug_abbrev  0x0000000000000000       0x48 ./build/Debug/.obj/UserSrc/UserI2c.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./build/Debug/.obj/UserSrc/UserI2c.o
+ .debug_line    0x0000000000000000       0x4c ./build/Debug/.obj/UserSrc/UserI2c.o
+ .debug_str     0x0000000000000000      0x12f ./build/Debug/.obj/UserSrc/UserI2c.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/UserI2c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserI2c.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.LCD_Init
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_TotalCubic
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_MeterNummber
+                0x0000000000000000       0x80 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_Signal
+                0x0000000000000000       0x60 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_BatteryPower
+                0x0000000000000000       0x40 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_Temperature
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_FlowSpeed
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_Time
+                0x0000000000000000      0x160 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_VerificationTotalCubic
+                0x0000000000000000       0x60 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ExValueOpen
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ExValueClose
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ExLowPower
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ForwardWater
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_BackwardWater
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ExVerificationMode
+                0x0000000000000000       0x30 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ParameterInfo
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_HistoryInfo
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_SystemStateInfo
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ErrorInfo
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_GoBack
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_SoftReset
+                0x0000000000000000       0x70 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_ClearCapacity
+                0x0000000000000000       0xc0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text.Screen_TotalTime
+                0x0000000000000000       0x30 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_info    0x0000000000000000      0xc3a ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_abbrev  0x0000000000000000      0x1dc ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_loc     0x0000000000000000      0x312 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_aranges
+                0x0000000000000000       0xd0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_ranges  0x0000000000000000       0xc0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_line    0x0000000000000000      0x5c8 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_str     0x0000000000000000      0x3f6 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/UserLcd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .debug_frame   0x0000000000000000      0x2a0 ./build/Debug/.obj/UserSrc/UserLcd.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.MeasureSonarInit
+                0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.floatcalc
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.MeasureAmcTask.str1.4
+                0x0000000000000000       0x54 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.MeasureAmcTask
+                0x0000000000000000      0x1d0 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.MeasureVrefTask.str1.4
+                0x0000000000000000       0x5a ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.MeasureVrefTask
+                0x0000000000000000      0x140 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.PrintfSonarRegister.str1.4
+                0x0000000000000000       0x95 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.PrintfSonarRegister
+                0x0000000000000000      0x140 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.GetfValue
+                0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.MeasureCuriseTask.str1.4
+                0x0000000000000000       0x5d ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata        0x0000000000000000       0x18 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.MeasureCuriseTask
+                0x0000000000000000      0x230 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.MeasureWaveWideTask.str1.4
+                0x0000000000000000       0x7e ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.MeasureWaveWideTask
+                0x0000000000000000      0x230 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.StandardMeasureInit
+                0x0000000000000000      0x100 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.MeasureDataProcess.str1.4
+                0x0000000000000000       0x19 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text.MeasureDataProcess
+                0x0000000000000000      0x150 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.flter_num
+                0x0000000000000000        0x1 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .rodata.hit_num
+                0x0000000000000000        0x1 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .bss.resvalid_flag
+                0x0000000000000000        0x1 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_info    0x0000000000000000     0x2246 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_abbrev  0x0000000000000000      0x3c7 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_loc     0x0000000000000000      0x60a ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_aranges
+                0x0000000000000000       0x68 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_ranges  0x0000000000000000       0x80 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_line    0x0000000000000000      0x753 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_str     0x0000000000000000     0x1139 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .debug_frame   0x0000000000000000      0x170 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ COMMON         0x0000000000000000       0x58 ./build/Debug/.obj/UserSrc/UserMeasure.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .text.RTCInit  0x0000000000000000       0x50 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .debug_info    0x0000000000000000      0x247 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .debug_abbrev  0x0000000000000000       0xfd ./build/Debug/.obj/UserSrc/UserRtc.o
+ .debug_aranges
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .debug_ranges  0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .debug_line    0x0000000000000000       0xf6 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .debug_str     0x0000000000000000      0x1fa ./build/Debug/.obj/UserSrc/UserRtc.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/UserRtc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserRtc.o
+ .debug_frame   0x0000000000000000       0x2c ./build/Debug/.obj/UserSrc/UserRtc.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .text.TimerInit
+                0x0000000000000000       0x60 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .debug_info    0x0000000000000000      0x1f9 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .debug_abbrev  0x0000000000000000       0xf1 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .debug_aranges
+                0x0000000000000000       0x20 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .debug_ranges  0x0000000000000000       0x10 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .debug_line    0x0000000000000000       0xa2 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .debug_str     0x0000000000000000      0x1f0 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/UserTimer.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserTimer.o
+ .debug_frame   0x0000000000000000       0x2c ./build/Debug/.obj/UserSrc/UserTimer.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .text.Uart1_Init
+                0x0000000000000000       0x60 ./build/Debug/.obj/UserSrc/UserUart.o
+ .text.Uart0_Init
+                0x0000000000000000       0xa0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .text.UartIrSend
+                0x0000000000000000       0xa0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/w25q16.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/w25q16.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/w25q16.o
+ .debug_info    0x0000000000000000       0x92 ./build/Debug/.obj/UserSrc/w25q16.o
+ .debug_abbrev  0x0000000000000000       0x58 ./build/Debug/.obj/UserSrc/w25q16.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./build/Debug/.obj/UserSrc/w25q16.o
+ .debug_line    0x0000000000000000       0x65 ./build/Debug/.obj/UserSrc/w25q16.o
+ .debug_str     0x0000000000000000      0x151 ./build/Debug/.obj/UserSrc/w25q16.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/UserSrc/w25q16.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/w25q16.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .text.ADC_Start
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .text.ADC_Mv   0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .text.ADC_Channel0InputMode
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_EnableSysTick
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_DisableSysTick
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_SetCpuTimer
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_StopCpuTimer
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.Wake_Set
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_DelayS
+                0x0000000000000000       0x60 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_GetPmuCount
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_SetStartTimerCount
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.CLOCK_GetTimerCountInterval
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text.Wake_256sec_Set
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_IsGlobalIntOpen
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_DisableInt
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_EnableInt
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_DeInit
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_Init
+                0x0000000000000000      0x110 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_StructInit
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_SoftInterruptStart
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_SoftInterruptStop
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_GetFlagStatus
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_ClearFlag
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text.EXTI_GetITStatus
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_ErasePage
+                0x0000000000000000       0x60 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_EraseUserFlash
+                0x0000000000000000       0xe0 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_ReadPage
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_WritePage
+                0x0000000000000000      0x2f0 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.Flash_WriteBuffer
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_WaitForPeEnd
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_GetStatus
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_GetFlagStatus
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_ITConfig
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text.FLASH_ITCmd
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ COMMON         0x0000000000000000        0x4 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .text.GPIO_Init
+                0x0000000000000000       0x90 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .text.GPIO_ReadInputDataBit
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .text.GPIO_ReadInputData
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .text.GPIO_ReadOutputData
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .text.GPIO_WriteData
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_Init
+                0x0000000000000000       0x90 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_StructInit
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_ITConfig
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_ITCmd
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_GenerateSTART
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_GenerateSTOP
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_AcknowledgeConfig
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_SendData
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_ReceiveData
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_Send7bitAddress
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_ReadRegister
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_ClearFlag
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_GetStatus
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_ClearIT
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_wait
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_BUSY
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text.I2C_Unlock
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_info    0x0000000000000000      0x789 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_abbrev  0x0000000000000000      0x2ad ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_loc     0x0000000000000000      0x2af ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_aranges
+                0x0000000000000000       0xa0 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_ranges  0x0000000000000000       0xa8 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_line    0x0000000000000000      0x495 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_str     0x0000000000000000      0x3cd ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .debug_frame   0x0000000000000000      0x128 ./build/Debug/.obj/driver/ls1d_std_i2c.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_NumCls
+                0x0000000000000000       0xf0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num0
+                0x0000000000000000      0x1b0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num1
+                0x0000000000000000      0x130 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num2
+                0x0000000000000000      0x190 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num3
+                0x0000000000000000      0x190 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num4
+                0x0000000000000000      0x170 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num5
+                0x0000000000000000      0x190 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num6
+                0x0000000000000000      0x1b0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num7
+                0x0000000000000000      0x150 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num8
+                0x0000000000000000      0x1d0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Num9
+                0x0000000000000000      0x1b0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrO
+                0x0000000000000000       0xd0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrN
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrF
+                0x0000000000000000       0x90 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrE
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrH
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrS
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrP
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrB
+                0x0000000000000000       0xf0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrR
+                0x0000000000000000       0xd0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrU
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrT
+                0x0000000000000000       0x70 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_StrL
+                0x0000000000000000       0x70 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Dot  0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_MaoHao
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_JianHao
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_LeftBrace
+                0x0000000000000000       0x90 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_RightBrace
+                0x0000000000000000       0x90 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .rodata.LCD_Conver_Num.str1.4
+                0x0000000000000000       0x2b ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Conver_Num
+                0x0000000000000000       0x70 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .rodata.LCD_Conver_Num
+                0x0000000000000000       0x28 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .rodata.LCD_Conver_Symbol.str1.4
+                0x0000000000000000        0xd ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Conver_Symbol
+                0x0000000000000000      0x1c0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .rodata.LCD_Conver_Symbol
+                0x0000000000000000       0xc4 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.Num2LcdNum
+                0x0000000000000000      0x190 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Disp
+                0x0000000000000000       0xa0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Dis_Init
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text.LCD_Dis_Cls
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .rodata.g_seg_dot
+                0x0000000000000000        0x7 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .rodata.g_seg_num
+                0x0000000000000000       0x38 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_info    0x0000000000000000      0xa89 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_abbrev  0x0000000000000000      0x245 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_loc     0x0000000000000000      0x3e0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_aranges
+                0x0000000000000000      0x128 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_ranges  0x0000000000000000      0x118 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_line    0x0000000000000000      0x8a0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_str     0x0000000000000000      0x320 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .debug_frame   0x0000000000000000      0x2dc ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ COMMON         0x0000000000000000        0xc ./build/Debug/.obj/driver/ls1d_std_lcd.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_TdcSetWindow
+                0x0000000000000000      0x120 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .rodata        0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GateWindowInit
+                0x0000000000000000       0x60 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_DefaultInit
+                0x0000000000000000       0x70 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .rodata.MEASURE_GetPulseWidth.str1.4
+                0x0000000000000000       0x15 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetPulseWidth
+                0x0000000000000000      0x1c0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetTdcCal
+                0x0000000000000000      0x320 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_WriteTdcCalToReg
+                0x0000000000000000       0xb0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetStartTime
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetResData
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_ClearResPtrReg
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_ClearADCPtrReg
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_ClearTdcResReg
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetTdcResReg
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_ClearTdcCalReg
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetResReadFlag
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetResPtrReg
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.GetVrefValue
+                0x0000000000000000      0x100 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetAmcValue
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetAutoCalculateFirRate
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetAutoDtofValue
+                0x0000000000000000       0x80 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetDtofConvertPsValue
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetManualDtofValue
+                0x0000000000000000       0xf0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .rodata.MEASURE_ExpectResPtr.str1.4
+                0x0000000000000000       0x1d ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_ExpectResPtr
+                0x0000000000000000      0x120 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCruiseMode
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetWatchDog
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCruiseXMode
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCruiseTOF
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCruiseAutoDirection
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetFireSel
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveFireNum
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetStopSel
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetMannualDirectionReverse
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseWavePeakMode
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetPulseWavePeakMode
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveWideMode
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetPulseWaveWideMode
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetFirstPulseWaveMode
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseFirstWaveThreshold
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveHitNum
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetPulseWaveHitNum
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveTailEnd
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveWaitEnd
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveHitIgnNum
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAutoCalculateMode
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAutoCalculateHitNum
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAutoCalculateFltRate
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetTdcAutoCalPre
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetTdcAutoCalPst
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetTdcAutoCalPre
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetTdcAutoCalPst
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtestSel
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtestDual
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtest
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtestOut
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRefOut
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRefSel
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRef
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRefDrive
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetTdcPreDelayValue
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetCalibrationZeroValue
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCalibrationZeroValue
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCalBypass
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCalibrationDelayValue
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetCalibrationMethod
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_StartTask
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetTask
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SetTaskToStart
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_StopTask
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SuspendTask
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_SleepTask
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_ExitCruiseTask
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_CanCpuSleep
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetITStatus
+                0x0000000000000000       0xc0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_ClearITPendingBit
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.MEASURE_GetTemperaturePortDirection
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text.iabs     0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_ClockFastModeConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_CPUTurboModeConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_RamOffConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_SonarOffConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_MbusOffConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_KeyModeConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_SpiLPOffConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_SpiLowPowerOffTimeConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_Vr1OffConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_Vr1ActiveConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_Vr0SonarStandbyConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetClockFastMode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetCPUTurboMode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetRamOffMode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetSonarOffMode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetMbusOffMode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetSpiLPOffMode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetVr1OffMode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetVr1Mode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetVr0Mode
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_GetResetSource
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text.POWER_SleepCPU
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_info    0x0000000000000000      0x6ec ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_abbrev  0x0000000000000000      0x1b1 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_loc     0x0000000000000000      0x328 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_aranges
+                0x0000000000000000       0xc8 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_ranges  0x0000000000000000       0xb8 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_line    0x0000000000000000      0x429 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_str     0x0000000000000000      0x478 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/driver/ls1d_std_power.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .debug_frame   0x0000000000000000      0x170 ./build/Debug/.obj/driver/ls1d_std_power.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .text.myputchar
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .rodata.printBuf.str1.4
+                0x0000000000000000        0x7 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .text.printBuf
+                0x0000000000000000       0x70 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text.RTC_StructInit
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text.RTC_GetDateTime
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text.RTC_SetDateTime
+                0x0000000000000000       0xd0 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text.RTC_Init
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text.RTC_ITConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text.RTC_SetAlarm
+                0x0000000000000000       0xe0 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text.RTC_ClearIT
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_info    0x0000000000000000      0x59e ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_abbrev  0x0000000000000000      0x1e2 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_loc     0x0000000000000000      0x19d ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_aranges
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_ranges  0x0000000000000000       0x78 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_line    0x0000000000000000      0x323 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_str     0x0000000000000000      0x37a ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .debug_frame   0x0000000000000000       0x8c ./build/Debug/.obj/driver/ls1d_std_rtc.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .debug_info    0x0000000000000000       0x73 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .debug_abbrev  0x0000000000000000       0x48 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .debug_line    0x0000000000000000       0x6e ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .debug_str     0x0000000000000000      0x144 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_spi.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.memcmp   0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.memcpy   0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.memset   0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.strcpy   0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.strstr   0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.strchr   0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .rodata.itoa.str1.4
+                0x0000000000000000       0x11 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.itoa     0x0000000000000000       0xf0 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.strlen   0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.lowtocap
+                0x0000000000000000       0x30 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.AsciiToHex
+                0x0000000000000000      0x1c0 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text.HexToAscii
+                0x0000000000000000       0xa0 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_info    0x0000000000000000      0x5aa ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_abbrev  0x0000000000000000      0x1c8 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_loc     0x0000000000000000      0x94a ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_aranges
+                0x0000000000000000       0x70 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_ranges  0x0000000000000000       0x78 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_line    0x0000000000000000      0x5db ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_str     0x0000000000000000      0x1e7 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .comment       0x0000000000000000       0x3b ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .debug_frame   0x0000000000000000       0xcc ./build/Debug/.obj/driver/ls1d_std_str_other.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_Init
+                0x0000000000000000       0x70 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_StructInit
+                0x0000000000000000       0x50 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_Cmd  0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_ITConfig
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_GetCounter
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_SetCounter
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_SetCompare
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_GetCompare
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text.TIM_GetITStatus
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .text.UART_ReceiveData
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .text.UART_ClearITPendingBit
+                0x0000000000000000       0x40 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .rodata.UART_ClearITPendingBit
+                0x0000000000000000       0x34 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .text.UART_IrInit
+                0x0000000000000000       0x80 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .text.UART_IrSendData
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .text.UART_IrReceiveData
+                0x0000000000000000       0x10 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .text.UART_SendChar
+                0x0000000000000000       0x20 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .text          0x0000000000000000        0x0 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ .data          0x0000000000000000        0x0 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ .bss           0x0000000000000000        0x0 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x000000001c000000 0x0000000000020000 r
+ram0             0x0000000010000000 0x0000000000001000 rw
+ram1             0x0000000010001000 0x0000000000001000 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x000000001c000000     0x33a0
+                0x000000001c000000                . = ALIGN (0x4)
+ *(.text .text.*)
+ .text._start   0x000000001c000000     0x139c ./build/Debug/.obj/target/start.o
+                0x000000001c000014                _start
+                0x000000001c001250                cpu_wait
+                0x000000001c001258                cpu_sleep
+                0x000000001c001304                wakeup_reset
+ *fill*         0x000000001c00139c        0x4 
+ .text.startup.main
+                0x000000001c0013a0       0x60 ./build/Debug/.obj/target/main.o
+                0x000000001c0013a0                main
+ .text.SystemClock
+                0x000000001c001400       0x40 ./build/Debug/.obj/UserSrc/UserClock.o
+                0x000000001c001400                SystemClock
+ .text.GPIOInit
+                0x000000001c001440      0x240 ./build/Debug/.obj/UserSrc/UserGpio.o
+                0x000000001c001440                GPIOInit
+ .text.UartInit
+                0x000000001c001680       0xd0 ./build/Debug/.obj/UserSrc/UserUart.o
+                0x000000001c001680                UartInit
+ .text.ADC_Init
+                0x000000001c001750       0x90 ./build/Debug/.obj/driver/ls1d_std_adc.o
+                0x000000001c001750                ADC_Init
+ .text.ADC_Measure
+                0x000000001c0017e0       0xc0 ./build/Debug/.obj/driver/ls1d_std_adc.o
+                0x000000001c0017e0                ADC_Measure
+ .text.Insert_Sort
+                0x000000001c0018a0       0x50 ./build/Debug/.obj/driver/ls1d_std_adc.o
+                0x000000001c0018a0                Insert_Sort
+ .text.ADC_DetectPower
+                0x000000001c0018f0       0xc0 ./build/Debug/.obj/driver/ls1d_std_adc.o
+                0x000000001c0018f0                ADC_DetectPower
+ .text.ADC_Sample
+                0x000000001c0019b0      0x1e0 ./build/Debug/.obj/driver/ls1d_std_adc.o
+                0x000000001c0019b0                ADC_Sample
+ .text.CLOCK_WaitForHSEStartUp
+                0x000000001c001b90       0x80 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001b90                CLOCK_WaitForHSEStartUp
+ .text.CLOCK_WaitForLSEStartUp
+                0x000000001c001c10       0xb0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001c10                CLOCK_WaitForLSEStartUp
+ .text.CLOCK_LSEConfig
+                0x000000001c001cc0       0x80 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001cc0                CLOCK_LSEConfig
+ .text.CLOCK_StructInit
+                0x000000001c001d40       0x40 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001d40                CLOCK_StructInit
+ .text.CLOCK_GetFlagStatus
+                0x000000001c001d80       0x80 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001d80                CLOCK_GetFlagStatus
+ .text.CLOCK_GetClocksFreq
+                0x000000001c001e00       0x50 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001e00                CLOCK_GetClocksFreq
+ .text.CLOCK_HSEConfig
+                0x000000001c001e50       0xb0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001e50                CLOCK_HSEConfig
+ .text.CLOCK_Init
+                0x000000001c001f00       0x90 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001f00                CLOCK_Init
+ .text.CLOCK_ClearCpuTimerIT
+                0x000000001c001f90       0x10 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001f90                CLOCK_ClearCpuTimerIT
+ .text.CLOCK_DelayUs
+                0x000000001c001fa0       0x50 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001fa0                CLOCK_DelayUs
+ .text.CLOCK_DelayMs
+                0x000000001c001ff0       0x50 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x000000001c001ff0                CLOCK_DelayMs
+ .text.EXTI_ClearITPendingBit
+                0x000000001c002040       0x20 ./build/Debug/.obj/driver/ls1d_std_exti.o
+                0x000000001c002040                EXTI_ClearITPendingBit
+ .text.FLASH_ClearIT
+                0x000000001c002060       0x30 ./build/Debug/.obj/driver/ls1d_std_flash.o
+                0x000000001c002060                FLASH_ClearIT
+ .text.GPIO_BitInit
+                0x000000001c002090       0x90 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+                0x000000001c002090                GPIO_BitInit
+ .text.GPIO_WriteBit
+                0x000000001c002120       0x40 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+                0x000000001c002120                GPIO_WriteBit
+ .text.GPIO_PinRemapConfig
+                0x000000001c002160       0x70 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+                0x000000001c002160                GPIO_PinRemapConfig
+ .text.MEASURE_ITConfig
+                0x000000001c0021d0       0x50 ./build/Debug/.obj/driver/ls1d_std_measure.o
+                0x000000001c0021d0                MEASURE_ITConfig
+ .text.MEASURE_ClearIT
+                0x000000001c002220       0x20 ./build/Debug/.obj/driver/ls1d_std_measure.o
+                0x000000001c002220                MEASURE_ClearIT
+ .text.MEASURE_ClearResITAndReadFlag
+                0x000000001c002240       0x10 ./build/Debug/.obj/driver/ls1d_std_measure.o
+                0x000000001c002240                MEASURE_ClearResITAndReadFlag
+ .text.printbase
+                0x000000001c002250      0x130 ./build/Debug/.obj/driver/ls1d_std_printf.o
+                0x000000001c002250                printbase
+ .text.puts     0x000000001c002380       0xa0 ./build/Debug/.obj/driver/ls1d_std_printf.o
+                0x000000001c002380                puts
+ .text.myprintf
+                0x000000001c002420      0x2c0 ./build/Debug/.obj/driver/ls1d_std_printf.o
+                0x000000001c002420                myprintf
+ .text.TIM_ClearIT
+                0x000000001c0026e0       0x30 ./build/Debug/.obj/driver/ls1d_std_timer.o
+                0x000000001c0026e0                TIM_ClearIT
+ .text.UART_Init
+                0x000000001c002710      0x180 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c002710                UART_Init
+ .text.UART_StructInit
+                0x000000001c002890       0x30 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c002890                UART_StructInit
+ .text.UART_ITConfig
+                0x000000001c0028c0       0x40 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c0028c0                UART_ITConfig
+ .text.UART_ITCmd
+                0x000000001c002900       0x70 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c002900                UART_ITCmd
+ .text.UART_SendData
+                0x000000001c002970       0x10 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c002970                UART_SendData
+ .text.UART_GetFlagStatus
+                0x000000001c002980       0x10 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c002980                UART_GetFlagStatus
+ .text.UART_GetITStatus
+                0x000000001c002990       0x10 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c002990                UART_GetITStatus
+ .text.UART_ClearIT
+                0x000000001c0029a0       0x40 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c0029a0                UART_ClearIT
+ .text.UART_ClearITFifo
+                0x000000001c0029e0       0x10 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                0x000000001c0029e0                UART_ClearITFifo
+ .text.WDG_SetWatchDog
+                0x000000001c0029f0       0x30 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+                0x000000001c0029f0                WDG_SetWatchDog
+ .text.WDG_DogFeed
+                0x000000001c002a20       0x20 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+                0x000000001c002a20                WDG_DogFeed
+ .text.ExtGpioA0_IRQHandler
+                0x000000001c002a40       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002a40                ExtGpioA0_IRQHandler
+ .text.ExtGpioA1_IRQHandler
+                0x000000001c002a70       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002a70                ExtGpioA1_IRQHandler
+ .text.ExtGpioA2_IRQHandler
+                0x000000001c002aa0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002aa0                ExtGpioA2_IRQHandler
+ .text.ExtGpioA3_IRQHandler
+                0x000000001c002ad0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002ad0                ExtGpioA3_IRQHandler
+ .text.ExtGpioA4_IRQHandler
+                0x000000001c002b00       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002b00                ExtGpioA4_IRQHandler
+ .text.ExtGpioA5_IRQHandler
+                0x000000001c002b30       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002b30                ExtGpioA5_IRQHandler
+ .text.ExtGpioA6_IRQHandler
+                0x000000001c002b60       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002b60                ExtGpioA6_IRQHandler
+ .text.ExtGpioA7_IRQHandler
+                0x000000001c002b90       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002b90                ExtGpioA7_IRQHandler
+ .text.ExtGpioA8_IRQHandler
+                0x000000001c002bc0       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002bc0                ExtGpioA8_IRQHandler
+ .text.ExtGpioA9_IRQHandler
+                0x000000001c002bd0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002bd0                ExtGpioA9_IRQHandler
+ .text.ExtGpioA10_IRQHandler
+                0x000000001c002c00       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002c00                ExtGpioA10_IRQHandler
+ .text.ExtGpioA11_IRQHandler
+                0x000000001c002c30       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002c30                ExtGpioA11_IRQHandler
+ .text.ExtGpioA12_IRQHandler
+                0x000000001c002c60       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002c60                ExtGpioA12_IRQHandler
+ .text.ExtGpioA13_IRQHandler
+                0x000000001c002c90       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002c90                ExtGpioA13_IRQHandler
+ .text.ExtGpioA14_IRQHandler
+                0x000000001c002ca0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002ca0                ExtGpioA14_IRQHandler
+ .text.ExtGpioA15_IRQHandler
+                0x000000001c002cd0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002cd0                ExtGpioA15_IRQHandler
+ .text.ExtGpioB0_IRQHandler
+                0x000000001c002d00       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002d00                ExtGpioB0_IRQHandler
+ .text.ExtGpioB1_IRQHandler
+                0x000000001c002d30       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002d30                ExtGpioB1_IRQHandler
+ .text.ExtGpioB2_IRQHandler
+                0x000000001c002d60       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002d60                ExtGpioB2_IRQHandler
+ .text.ExtGpioB3_IRQHandler
+                0x000000001c002d90       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002d90                ExtGpioB3_IRQHandler
+ .text.ExtGpioB4_IRQHandler
+                0x000000001c002dc0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002dc0                ExtGpioB4_IRQHandler
+ .text.ExtGpioB5_IRQHandler
+                0x000000001c002df0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002df0                ExtGpioB5_IRQHandler
+ .text.ExtGpioB6_IRQHandler
+                0x000000001c002e20       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002e20                ExtGpioB6_IRQHandler
+ .text.ExtGpioB7_IRQHandler
+                0x000000001c002e50       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002e50                ExtGpioB7_IRQHandler
+ .text.ExtGpioB8_IRQHandler
+                0x000000001c002e80       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002e80                ExtGpioB8_IRQHandler
+ .text.ExtGpioB9_IRQHandler
+                0x000000001c002eb0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002eb0                ExtGpioB9_IRQHandler
+ .text.ExtGpioB10_IRQHandler
+                0x000000001c002ee0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002ee0                ExtGpioB10_IRQHandler
+ .text.ExtGpioB11_IRQHandler
+                0x000000001c002f10       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002f10                ExtGpioB11_IRQHandler
+ .text.ExtGpioB12_IRQHandler
+                0x000000001c002f40       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002f40                ExtGpioB12_IRQHandler
+ .text.ExtGpioB13_IRQHandler
+                0x000000001c002f70       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002f70                ExtGpioB13_IRQHandler
+ .text.ExtGpioB14_IRQHandler
+                0x000000001c002fa0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002fa0                ExtGpioB14_IRQHandler
+ .text.ExtGpioB15_IRQHandler
+                0x000000001c002fd0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c002fd0                ExtGpioB15_IRQHandler
+ .text.Soft0_IRQHandler
+                0x000000001c003000       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003000                Soft0_IRQHandler
+ .text.Soft1_IRQHandler
+                0x000000001c003010       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003010                Soft1_IRQHandler
+ .text.Wake_IRQHandler
+                0x000000001c003020       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003020                Wake_IRQHandler
+ .text.ResValid_IRQHandler
+                0x000000001c003050       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003050                ResValid_IRQHandler
+ .text.BatFail_IRQHandler
+                0x000000001c003060       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003060                BatFail_IRQHandler
+ .text.C32kFail_IRQHandler
+                0x000000001c003070       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003070                C32kFail_IRQHandler
+ .text.C8mFail_IRQHandler
+                0x000000001c0030a0       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c0030a0                C8mFail_IRQHandler
+ .text.Key_IRQHandler
+                0x000000001c0030d0       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c0030d0                Key_IRQHandler
+ .text.Ring_IRQHandler
+                0x000000001c0030e0       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c0030e0                Ring_IRQHandler
+ .text.Rtc_IRQHandler
+                0x000000001c0030f0       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c0030f0                Rtc_IRQHandler
+ .text.TIMER_IRQHandler
+                0x000000001c003100       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003100                TIMER_IRQHandler
+ .text.CpuTimer_IRQHandler
+                0x000000001c003110       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003110                CpuTimer_IRQHandler
+ .text.I2C_IRQHandler
+                0x000000001c003120       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003120                I2C_IRQHandler
+ .text.UART1_IRQHandler
+                0x000000001c003130       0x90 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003130                UART1_IRQHandler
+ .text.UART0_IRQHandler
+                0x000000001c0031c0       0x90 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c0031c0                UART0_IRQHandler
+ .text.FLASH_IRQHandler
+                0x000000001c003250       0x30 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003250                FLASH_IRQHandler
+ .text.SPI_IRQHandler
+                0x000000001c003280       0x60 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003280                SPI_IRQHandler
+ .text.ADC_IRQHandler
+                0x000000001c0032e0       0x40 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c0032e0                ADC_IRQHandler
+ .text.Exint_IRQHandler
+                0x000000001c003320       0x80 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c003320                Exint_IRQHandler
+                0x000000001c0033a0                . = ALIGN (0x4)
+                0x000000001c0033a0                _etext = .
+
+.rodata         0x000000001c0033a0      0x55c
+                0x000000001c0033a0                . = ALIGN (0x4)
+ *(.rodata .rodata.*)
+ .rodata.main.str1.4
+                0x000000001c0033a0        0x8 ./build/Debug/.obj/target/main.o
+ .rodata.ADC_Sample.str1.4
+                0x000000001c0033a8       0x39 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ *fill*         0x000000001c0033e1        0x3 
+ .rodata.myprintf
+                0x000000001c0033e4      0x150 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .rodata.ExtGpioA0_IRQHandler.str1.4
+                0x000000001c003534       0x1c ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ .rodata.UART1_IRQHandler.str1.4
+                0x000000001c003550       0x10 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                                          0xf (size before relaxing)
+ .rodata.__FUNCTION__.2715
+                0x000000001c003560       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003576        0x2 
+ .rodata.__FUNCTION__.2711
+                0x000000001c003578       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00358e        0x2 
+ .rodata.__FUNCTION__.2707
+                0x000000001c003590       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0035a6        0x2 
+ .rodata.__FUNCTION__.2703
+                0x000000001c0035a8       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0035be        0x2 
+ .rodata.__FUNCTION__.2699
+                0x000000001c0035c0       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0035d6        0x2 
+ .rodata.__FUNCTION__.2695
+                0x000000001c0035d8       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0035ee        0x2 
+ .rodata.__FUNCTION__.2691
+                0x000000001c0035f0       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003605        0x3 
+ .rodata.__FUNCTION__.2687
+                0x000000001c003608       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00361d        0x3 
+ .rodata.__FUNCTION__.2683
+                0x000000001c003620       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003635        0x3 
+ .rodata.__FUNCTION__.2679
+                0x000000001c003638       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00364d        0x3 
+ .rodata.__FUNCTION__.2675
+                0x000000001c003650       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003665        0x3 
+ .rodata.__FUNCTION__.2671
+                0x000000001c003668       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00367d        0x3 
+ .rodata.__FUNCTION__.2667
+                0x000000001c003680       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003695        0x3 
+ .rodata.__FUNCTION__.2663
+                0x000000001c003698       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0036ad        0x3 
+ .rodata.__FUNCTION__.2659
+                0x000000001c0036b0       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0036c5        0x3 
+ .rodata.__FUNCTION__.2655
+                0x000000001c0036c8       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0036dd        0x3 
+ .rodata.__FUNCTION__.2651
+                0x000000001c0036e0       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0036f6        0x2 
+ .rodata.__FUNCTION__.2647
+                0x000000001c0036f8       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00370e        0x2 
+ .rodata.__FUNCTION__.2640
+                0x000000001c003710       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003726        0x2 
+ .rodata.__FUNCTION__.2636
+                0x000000001c003728       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00373e        0x2 
+ .rodata.__FUNCTION__.2632
+                0x000000001c003740       0x16 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003756        0x2 
+ .rodata.__FUNCTION__.2628
+                0x000000001c003758       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00376d        0x3 
+ .rodata.__FUNCTION__.2621
+                0x000000001c003770       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003785        0x3 
+ .rodata.__FUNCTION__.2617
+                0x000000001c003788       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00379d        0x3 
+ .rodata.__FUNCTION__.2613
+                0x000000001c0037a0       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0037b5        0x3 
+ .rodata.__FUNCTION__.2609
+                0x000000001c0037b8       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0037cd        0x3 
+ .rodata.__FUNCTION__.2605
+                0x000000001c0037d0       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0037e5        0x3 
+ .rodata.__FUNCTION__.2601
+                0x000000001c0037e8       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c0037fd        0x3 
+ .rodata.__FUNCTION__.2597
+                0x000000001c003800       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003815        0x3 
+ .rodata.__FUNCTION__.2593
+                0x000000001c003818       0x15 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00382d        0x3 
+ .rodata.__FUNCTION__.2577
+                0x000000001c003830        0xf ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c00383f        0x1 
+ .rodata.__FUNCTION__.2573
+                0x000000001c003840       0x11 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003851        0x3 
+ .rodata.__FUNCTION__.2538
+                0x000000001c003854       0x13 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ *fill*         0x000000001c003867        0x1 
+ .rodata.__FUNCTION__.2534
+                0x000000001c003868       0x14 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+ .rodata.Ext_IrqHandle
+                0x000000001c00387c       0x80 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                0x000000001c00387c                Ext_IrqHandle
+                0x000000001c0038fc                . = ALIGN (0x4)
+                0x000000001c0038fc                _sidata = ALIGN (., 0x4)
+                0x000000001c0038fc                . = ALIGN (0x4)
+
+.rela.dyn       0x000000001c0038fc        0x0
+ .rela.got      0x000000001c0038fc        0x0 ./build/Debug/.obj/target/start.o
+ .rela.rodata.myprintf
+                0x000000001c0038fc        0x0 ./build/Debug/.obj/target/start.o
+ .rela.rodata.Ext_IrqHandle
+                0x000000001c0038fc        0x0 ./build/Debug/.obj/target/start.o
+
+.data           0x0000000010001000       0x28 load address 0x000000001c0038fc
+                0x0000000010001000                _sdata = .
+                0x0000000010001000                . = ALIGN (0x4)
+ *(.got.plt)
+ .got.plt       0x0000000010001000        0x0 ./build/Debug/.obj/target/start.o
+                0x0000000010001000                . = ALIGN (0x4)
+ *(.got)
+ .got           0x0000000010001000       0x28 ./build/Debug/.obj/target/start.o
+                0x0000000010001000                _GLOBAL_OFFSET_TABLE_
+                0x0000000010001028                . = ALIGN (0x4)
+ *(.data .data.*)
+                0x0000000010001028                . = ALIGN (0x4)
+                0x0000000010001028                _edata = .
+
+.bss            0x0000000010001028       0x18 load address 0x000000001c003924
+                0x0000000010001028                . = ALIGN (0x4)
+                0x0000000010001028                _sbss = .
+ *(.sbss)
+                0x0000000010001028                . = ALIGN (0x4)
+ *(.bss .bss.*)
+                0x0000000010001028                . = ALIGN (0x4)
+ *(.scommon)
+                0x0000000010001028                . = ALIGN (0x4)
+ *(COMMON)
+ COMMON         0x0000000010001028        0x4 ./build/Debug/.obj/target/main.o
+                0x0000000010001028                debugflag
+ COMMON         0x000000001000102c        0xc ./build/Debug/.obj/driver/ls1d_std_adc.o
+                0x000000001000102c                MaxDiff
+                0x000000001000102e                MaxAdc
+                0x0000000010001030                g_adc_diff
+                0x0000000010001032                MinAdc
+                0x0000000010001034                g_adc_data
+                0x0000000010001036                MidAdc
+ COMMON         0x0000000010001038        0x8 ./build/Debug/.obj/driver/ls1d_std_clock.o
+                0x0000000010001038                inte8m
+                0x000000001000103c                inte32K
+                0x0000000010001040                . = ALIGN (0x4)
+                0x0000000010001040                _ebss = .
+Address of section .text set to 0x1c000000
+LOAD ./build/Debug/.obj/target/start.o
+LOAD ./build/Debug/.obj/target/sonar.o
+LOAD ./build/Debug/.obj/target/main.o
+LOAD ./build/Debug/.obj/UserSrc/Filter.o
+LOAD ./build/Debug/.obj/UserSrc/GlobalDef.o
+LOAD ./build/Debug/.obj/UserSrc/UserClock.o
+LOAD ./build/Debug/.obj/UserSrc/UserGpio.o
+LOAD ./build/Debug/.obj/UserSrc/UserI2c.o
+LOAD ./build/Debug/.obj/UserSrc/UserLcd.o
+LOAD ./build/Debug/.obj/UserSrc/UserMeasure.o
+LOAD ./build/Debug/.obj/UserSrc/UserRtc.o
+LOAD ./build/Debug/.obj/UserSrc/UserTimer.o
+LOAD ./build/Debug/.obj/UserSrc/UserUart.o
+LOAD ./build/Debug/.obj/UserSrc/w25q16.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_adc.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_clock.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_exti.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_flash.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_gpio.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_i2c.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_lcd.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_measure.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_power.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_printf.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_rtc.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_spi.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_str_other.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_timer.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_uart.o
+LOAD ./build/Debug/.obj/driver/ls1d_std_wdg.o
+LOAD ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+OUTPUT(./build/Debug/adc_voltage_demo.elf elf32-loongarch)
+
+.debug_line     0x0000000000000000     0x53e0
+ .debug_line    0x0000000000000000       0xf8 ./build/Debug/.obj/target/start.o
+ .debug_line    0x00000000000000f8      0x152 ./build/Debug/.obj/target/main.o
+ .debug_line    0x000000000000024a       0x9e ./build/Debug/.obj/UserSrc/UserClock.o
+ .debug_line    0x00000000000002e8      0x4b2 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .debug_line    0x000000000000079a      0x1e0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .debug_line    0x000000000000097a      0x4e5 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .debug_line    0x0000000000000e5f      0x75a ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .debug_line    0x00000000000015b9      0x27a ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .debug_line    0x0000000000001833      0x960 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .debug_line    0x0000000000002193      0x2fe ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .debug_line    0x0000000000002491     0x1707 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .debug_line    0x0000000000003b98      0x4f1 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .debug_line    0x0000000000004089      0x2ca ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .debug_line    0x0000000000004353      0x56e ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .debug_line    0x00000000000048c1       0xaa ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .debug_line    0x000000000000496b      0xa75 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.debug_info     0x0000000000000000     0x9611
+ .debug_info    0x0000000000000000       0x26 ./build/Debug/.obj/target/start.o
+ .debug_info    0x0000000000000026      0x31b ./build/Debug/.obj/target/main.o
+ .debug_info    0x0000000000000341      0x175 ./build/Debug/.obj/UserSrc/UserClock.o
+ .debug_info    0x00000000000004b6      0xdcf ./build/Debug/.obj/UserSrc/UserGpio.o
+ .debug_info    0x0000000000001285      0x73b ./build/Debug/.obj/UserSrc/UserUart.o
+ .debug_info    0x00000000000019c0      0x725 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .debug_info    0x00000000000020e5      0xcd0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .debug_info    0x0000000000002db5      0x536 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .debug_info    0x00000000000032eb      0xc8b ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .debug_info    0x0000000000003f76      0x516 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .debug_info    0x000000000000448c     0x2603 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .debug_info    0x0000000000006a8f      0x5e4 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .debug_info    0x0000000000007073      0x5c2 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .debug_info    0x0000000000007635      0x984 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .debug_info    0x0000000000007fb9       0xd1 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .debug_info    0x000000000000808a     0x1587 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.debug_abbrev   0x0000000000000000     0x238b
+ .debug_abbrev  0x0000000000000000       0x14 ./build/Debug/.obj/target/start.o
+ .debug_abbrev  0x0000000000000014      0x123 ./build/Debug/.obj/target/main.o
+ .debug_abbrev  0x0000000000000137       0xec ./build/Debug/.obj/UserSrc/UserClock.o
+ .debug_abbrev  0x0000000000000223      0x26f ./build/Debug/.obj/UserSrc/UserGpio.o
+ .debug_abbrev  0x0000000000000492      0x209 ./build/Debug/.obj/UserSrc/UserUart.o
+ .debug_abbrev  0x000000000000069b      0x2c6 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .debug_abbrev  0x0000000000000961      0x41d ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .debug_abbrev  0x0000000000000d7e      0x1ea ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .debug_abbrev  0x0000000000000f68      0x440 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .debug_abbrev  0x00000000000013a8      0x202 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .debug_abbrev  0x00000000000015aa      0x3ad ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .debug_abbrev  0x0000000000001957      0x278 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .debug_abbrev  0x0000000000001bcf      0x1b2 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .debug_abbrev  0x0000000000001d81      0x2eb ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .debug_abbrev  0x000000000000206c       0xa8 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .debug_abbrev  0x0000000000002114      0x277 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.debug_aranges  0x0000000000000000      0x8e8
+ .debug_aranges
+                0x0000000000000000       0x20 ./build/Debug/.obj/target/start.o
+ .debug_aranges
+                0x0000000000000020       0x20 ./build/Debug/.obj/target/main.o
+ .debug_aranges
+                0x0000000000000040       0x20 ./build/Debug/.obj/UserSrc/UserClock.o
+ .debug_aranges
+                0x0000000000000060       0x78 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .debug_aranges
+                0x00000000000000d8       0x38 ./build/Debug/.obj/UserSrc/UserUart.o
+ .debug_aranges
+                0x0000000000000110       0x58 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .debug_aranges
+                0x0000000000000168       0xc0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .debug_aranges
+                0x0000000000000228       0x78 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .debug_aranges
+                0x00000000000002a0       0x70 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .debug_aranges
+                0x0000000000000310       0x58 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .debug_aranges
+                0x0000000000000368      0x280 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .debug_aranges
+                0x00000000000005e8       0x40 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .debug_aranges
+                0x0000000000000628       0x68 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .debug_aranges
+                0x0000000000000690       0x90 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .debug_aranges
+                0x0000000000000720       0x28 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .debug_aranges
+                0x0000000000000748      0x1a0 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.debug_str      0x0000000000000000     0x24c6
+ .debug_str     0x0000000000000000       0x43 ./build/Debug/.obj/target/start.o
+ .debug_str     0x0000000000000043      0x1ef ./build/Debug/.obj/target/main.o
+                                        0x23e (size before relaxing)
+ .debug_str     0x0000000000000232       0xbc ./build/Debug/.obj/UserSrc/UserClock.o
+                                        0x1f4 (size before relaxing)
+ .debug_str     0x00000000000002ee      0x412 ./build/Debug/.obj/UserSrc/UserGpio.o
+                                        0x5a3 (size before relaxing)
+ .debug_str     0x0000000000000700      0x19e ./build/Debug/.obj/UserSrc/UserUart.o
+                                        0x36e (size before relaxing)
+ .debug_str     0x000000000000089e      0x19e ./build/Debug/.obj/driver/ls1d_std_adc.o
+                                        0x363 (size before relaxing)
+ .debug_str     0x0000000000000a3c      0x1fa ./build/Debug/.obj/driver/ls1d_std_clock.o
+                                        0x539 (size before relaxing)
+ .debug_str     0x0000000000000c36      0x1eb ./build/Debug/.obj/driver/ls1d_std_exti.o
+                                        0x43b (size before relaxing)
+ .debug_str     0x0000000000000e21      0x2aa ./build/Debug/.obj/driver/ls1d_std_flash.o
+                                        0x503 (size before relaxing)
+ .debug_str     0x00000000000010cb       0xc3 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+                                        0x434 (size before relaxing)
+ .debug_str     0x000000000000118e      0xc2d ./build/Debug/.obj/driver/ls1d_std_measure.o
+                                        0xf14 (size before relaxing)
+ .debug_str     0x0000000000001dbb       0x71 ./build/Debug/.obj/driver/ls1d_std_printf.o
+                                        0x1f3 (size before relaxing)
+ .debug_str     0x0000000000001e2c      0x117 ./build/Debug/.obj/driver/ls1d_std_timer.o
+                                        0x37e (size before relaxing)
+ .debug_str     0x0000000000001f43       0xe7 ./build/Debug/.obj/driver/ls1d_std_uart.o
+                                        0x550 (size before relaxing)
+ .debug_str     0x000000000000202a       0x25 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+                                        0x176 (size before relaxing)
+ .debug_str     0x000000000000204f      0x477 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+                                        0x7e6 (size before relaxing)
+
+.debug_ranges   0x0000000000000000      0xc90
+ .debug_ranges  0x0000000000000000       0x10 ./build/Debug/.obj/target/main.o
+ .debug_ranges  0x0000000000000010       0x10 ./build/Debug/.obj/UserSrc/UserClock.o
+ .debug_ranges  0x0000000000000020       0x68 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .debug_ranges  0x0000000000000088       0x28 ./build/Debug/.obj/UserSrc/UserUart.o
+ .debug_ranges  0x00000000000000b0       0xb8 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .debug_ranges  0x0000000000000168      0x1b8 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .debug_ranges  0x0000000000000320       0x68 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .debug_ranges  0x0000000000000388      0x178 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .debug_ranges  0x0000000000000500       0x48 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .debug_ranges  0x0000000000000548      0x420 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .debug_ranges  0x0000000000000968       0xa8 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .debug_ranges  0x0000000000000a10       0x58 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .debug_ranges  0x0000000000000a68       0x80 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .debug_ranges  0x0000000000000ae8       0x18 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .debug_ranges  0x0000000000000b00      0x190 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.comment        0x0000000000000000       0x3a
+ .comment       0x0000000000000000       0x3a ./build/Debug/.obj/target/main.o
+                                         0x3b (size before relaxing)
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/UserSrc/UserClock.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/UserSrc/UserGpio.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/UserSrc/UserUart.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .comment       0x000000000000003a       0x3b ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/target/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserClock.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserGpio.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.debug_frame    0x0000000000000000     0x15bc
+ .debug_frame   0x0000000000000000       0x28 ./build/Debug/.obj/target/main.o
+ .debug_frame   0x0000000000000028       0x2c ./build/Debug/.obj/UserSrc/UserClock.o
+ .debug_frame   0x0000000000000054      0x16c ./build/Debug/.obj/UserSrc/UserGpio.o
+ .debug_frame   0x00000000000001c0       0xa0 ./build/Debug/.obj/UserSrc/UserUart.o
+ .debug_frame   0x0000000000000260       0xf8 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .debug_frame   0x0000000000000358      0x194 ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .debug_frame   0x00000000000004ec       0xd0 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .debug_frame   0x00000000000005bc      0x148 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .debug_frame   0x0000000000000704       0x90 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .debug_frame   0x0000000000000794      0x624 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .debug_frame   0x0000000000000db8       0xe0 ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .debug_frame   0x0000000000000e98       0xb0 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .debug_frame   0x0000000000000f48      0x10c ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .debug_frame   0x0000000000001054       0x30 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .debug_frame   0x0000000000001084      0x538 ./build/Debug/.obj/target/ls1d_std_Interrupt.o
+
+.debug_loc      0x0000000000000000     0x56fd
+ .debug_loc     0x0000000000000000      0x160 ./build/Debug/.obj/UserSrc/UserUart.o
+ .debug_loc     0x0000000000000160      0x374 ./build/Debug/.obj/driver/ls1d_std_adc.o
+ .debug_loc     0x00000000000004d4      0x78a ./build/Debug/.obj/driver/ls1d_std_clock.o
+ .debug_loc     0x0000000000000c5e      0x131 ./build/Debug/.obj/driver/ls1d_std_exti.o
+ .debug_loc     0x0000000000000d8f      0xca1 ./build/Debug/.obj/driver/ls1d_std_flash.o
+ .debug_loc     0x0000000000001a30      0x420 ./build/Debug/.obj/driver/ls1d_std_gpio.o
+ .debug_loc     0x0000000000001e50     0x2b71 ./build/Debug/.obj/driver/ls1d_std_measure.o
+ .debug_loc     0x00000000000049c1      0x70d ./build/Debug/.obj/driver/ls1d_std_printf.o
+ .debug_loc     0x00000000000050ce      0x107 ./build/Debug/.obj/driver/ls1d_std_timer.o
+ .debug_loc     0x00000000000051d5      0x49d ./build/Debug/.obj/driver/ls1d_std_uart.o
+ .debug_loc     0x0000000000005672       0x22 ./build/Debug/.obj/driver/ls1d_std_wdg.o
+ .debug_loc     0x0000000000005694       0x69 ./build/Debug/.obj/target/ls1d_std_Interrupt.o

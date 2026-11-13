@@ -1,0 +1,3 @@
+tool: GCC
+fileName: template.map
+elfName: template.elf

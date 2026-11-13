@@ -1,0 +1,3 @@
+tool: GCC
+fileName: uart_interrupt_transfer.map
+elfName: uart_interrupt_transfer.elf
