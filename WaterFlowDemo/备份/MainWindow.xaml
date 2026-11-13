@@ -1,0 +1,58 @@
+<Window x:Class="WaterFlowDemo.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="水流速监测 · LS1D 展示终端" Width="1260" Height="830" MinWidth="1030" MinHeight="700" WindowStartupLocation="CenterScreen" Background="#F3F6FA" FontFamily="Microsoft YaHei UI" Foreground="#16283F">
+ <Window.Resources>
+  <Style TargetType="TextBlock"><Setter Property="TextWrapping" Value="Wrap"/></Style>
+  <Style x:Key="Muted" TargetType="TextBlock"><Setter Property="Foreground" Value="#7A889B"/><Setter Property="FontSize" Value="12"/></Style>
+  <Style x:Key="Card" TargetType="Border"><Setter Property="Background" Value="White"/><Setter Property="CornerRadius" Value="14"/><Setter Property="Padding" Value="24"/><Setter Property="BorderBrush" Value="#E5EBF2"/><Setter Property="BorderThickness" Value="1"/></Style>
+  <Style TargetType="TextBox"><Setter Property="FontSize" Value="15"/><Setter Property="Padding" Value="12,10"/><Setter Property="Background" Value="#F7F9FC"/><Setter Property="BorderBrush" Value="#DFE6EF"/><Setter Property="BorderThickness" Value="1"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
+  <Style TargetType="Button"><Setter Property="Cursor" Value="Hand"/><Setter Property="Padding" Value="20,11"/><Setter Property="Background" Value="#1878F2"/><Setter Property="Foreground" Value="White"/><Setter Property="BorderThickness" Value="0"/><Setter Property="FontSize" Value="13"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border x:Name="Surface" Background="{TemplateBinding Background}" CornerRadius="7" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border><ControlTemplate.Triggers><Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Surface" Property="Opacity" Value="0.85"/></Trigger><Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Surface" Property="BorderBrush" Value="#73AFFF"/><Setter TargetName="Surface" Property="BorderThickness" Value="2"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+ </Window.Resources>
+ <Grid Background="#F3F6FA">
+  <Grid.ColumnDefinitions><ColumnDefinition Width="202"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+  <Border Background="#10243C">
+   <Grid Margin="22,30,22,24">
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+    <StackPanel><Border Background="#237EF3" CornerRadius="10" Width="42" Height="42" HorizontalAlignment="Left"><TextBlock Text="≈" FontSize="32" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-5,0,0"/></Border><TextBlock Text="水流速监测" FontSize="21" FontWeight="Bold" Foreground="White" Margin="0,18,0,6"/><TextBlock Text="ULTRASONIC FLOW" FontSize="10" Foreground="#88A1BE"/></StackPanel>
+    <StackPanel Grid.Row="1" Margin="-8,48,-8,0"><TextBlock Text="工作空间" Foreground="#6F89A6" FontSize="11" Margin="14,0,0,16"/><Border Background="#243F60" CornerRadius="8" Padding="14,14"><TextBlock Text="◈   数据总览" Foreground="#FFFFFF" FontSize="14"/></Border><TextBlock Text="超声波时差法" Foreground="#829BB5" FontSize="12" Margin="14,22,0,0"/></StackPanel>
+    <Border Grid.Row="2" Background="#1A324D" CornerRadius="10" Padding="15"><StackPanel><TextBlock Text="LS1D" Foreground="White" FontWeight="Bold" FontSize="18"/><TextBlock Text="龙芯超声波计量芯片" Foreground="#9CB0C7" FontSize="11" Margin="0,6,0,14"/><TextBlock Text="●  展示模式" Foreground="#7FBDFF" FontSize="12"/></StackPanel></Border>
+   </Grid>
+  </Border>
+  <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+   <StackPanel Margin="30,27,30,22">
+    <Grid Margin="0,0,0,24"><StackPanel><TextBlock Text="数据总览" FontSize="26" FontWeight="Bold"/><TextBlock Text="顺逆流传播时间 · 水流速度分析" Foreground="#7A889B" FontSize="12" Margin="0,8,0,0"/></StackPanel><Border HorizontalAlignment="Right" VerticalAlignment="Center" Background="#E7EFFC" CornerRadius="16" Padding="14,8"><TextBlock Text="●  演示数据 / 未连接设备" FontSize="12" Foreground="#3975BF"/></Border></Grid>
+    <Grid Margin="0,0,0,20">
+     <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/><ColumnDefinition Width="1.15*"/></Grid.ColumnDefinitions>
+     <Border Style="{StaticResource Card}" Margin="0,0,14,0"><StackPanel><TextBlock Text="↘  顺流分析时间" Foreground="#4475AF" FontSize="14"/><StackPanel Orientation="Horizontal" Margin="0,20,0,14"><TextBlock x:Name="ForwardValue" Text="27.001" FontFamily="Segoe UI" FontSize="37" FontWeight="SemiBold"/><TextBlock Text="μs" Margin="8,0,0,7" VerticalAlignment="Bottom" Foreground="#7A889B" FontSize="16"/></StackPanel><TextBlock Text="T_f  ·  沿水流方向传播" Style="{StaticResource Muted}"/></StackPanel></Border>
+     <Border Grid.Column="1" Style="{StaticResource Card}" Margin="0,0,14,0"><StackPanel><TextBlock Text="↖  逆流分析时间" Foreground="#3C928D" FontSize="14"/><StackPanel Orientation="Horizontal" Margin="0,20,0,14"><TextBlock x:Name="ReverseValue" Text="27.053" FontFamily="Segoe UI" FontSize="37" FontWeight="SemiBold"/><TextBlock Text="μs" Margin="8,0,0,7" VerticalAlignment="Bottom" Foreground="#7A889B" FontSize="16"/></StackPanel><TextBlock Text="T_r  ·  逆水流方向传播" Style="{StaticResource Muted}"/></StackPanel></Border>
+     <Border Grid.Column="2" CornerRadius="14" Background="#1878F2" Padding="24"><StackPanel><TextBlock Text="计算水流速度" Foreground="#DAEAFF" FontSize="14"/><StackPanel Orientation="Horizontal" Margin="0,13,0,8"><TextBlock x:Name="VelocityValue" Text="2.013" Foreground="White" FontSize="47" FontFamily="Segoe UI" FontWeight="SemiBold"/><TextBlock Text="m/s" Foreground="#DAEAFF" Margin="9,0,0,9" VerticalAlignment="Bottom" FontSize="16"/></StackPanel><TextBlock x:Name="DirectionLabel" Text="→  正向流动" Foreground="White" FontSize="12"/></StackPanel></Border>
+    </Grid>
+    <Grid Margin="0,0,0,20">
+     <Grid.ColumnDefinitions><ColumnDefinition Width="1.6*"/><ColumnDefinition/></Grid.ColumnDefinitions>
+     <Border Style="{StaticResource Card}" Margin="0,0,18,0"><StackPanel><TextBlock Text="声波传播示意" FontSize="16" FontWeight="SemiBold"/><TextBlock Text="同一声程，顺流先到达，逆流后到达" Style="{StaticResource Muted}" Margin="0,7,0,10"/>
+      <Viewbox Stretch="Uniform" Height="112" Margin="0,4,0,10"><Canvas Width="510" Height="180">
+       <Rectangle Canvas.Left="15" Canvas.Top="45" Width="480" Height="92" Fill="#EDF5FF"/>
+       <Line X1="15" Y1="45" X2="495" Y2="45" Stroke="#BACEE6" StrokeThickness="4"/><Line X1="15" Y1="137" X2="495" Y2="137" Stroke="#BACEE6" StrokeThickness="4"/>
+       <TextBlock Canvas.Left="180" Canvas.Top="108" Text="水流方向  →" Foreground="#93B6DF" FontSize="15"/>
+       <Line X1="100" Y1="53" X2="403" Y2="129" Stroke="#267EF0" StrokeThickness="3"/><Polygon Points="403,129 388,117 386,130" Fill="#267EF0"/>
+       <Line X1="400" Y1="115" X2="100" Y2="39" Stroke="#3BABA0" StrokeThickness="2" StrokeDashArray="5,3"/><Polygon Points="100,39 113,51 116,38" Fill="#3BABA0"/>
+       <Rectangle Canvas.Left="78" Canvas.Top="30" Width="37" Height="23" RadiusX="5" RadiusY="5" Fill="#244E7B"/><Rectangle Canvas.Left="385" Canvas.Top="127" Width="37" Height="23" RadiusX="5" RadiusY="5" Fill="#244E7B"/>
+       <TextBlock Canvas.Left="65" Canvas.Top="5" Text="换能器 A" Foreground="#4A6584" FontSize="12"/><TextBlock Canvas.Left="377" Canvas.Top="158" Text="换能器 B" Foreground="#4A6584" FontSize="12"/>
+      </Canvas></Viewbox>
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"><TextBlock Text="━━  顺流 T_f" Foreground="#267EF0" FontSize="11" Margin="0,0,28,0"/><TextBlock Text="┄┄  逆流 T_r" Foreground="#3BABA0" FontSize="11"/></StackPanel>
+     </StackPanel></Border>
+     <Border Grid.Column="1" Style="{StaticResource Card}"><StackPanel><TextBlock Text="时差与计算" FontSize="16" FontWeight="SemiBold"/><TextBlock Text="传播时间差  ΔT = T_r − T_f" Style="{StaticResource Muted}" Margin="0,22,0,4"/><StackPanel Orientation="Horizontal"><TextBlock x:Name="DeltaValue" FontFamily="Segoe UI" FontSize="32" FontWeight="SemiBold"/><TextBlock Text="ns" Foreground="#7A889B" Margin="8,0,0,5" VerticalAlignment="Bottom"/></StackPanel><Border Height="1" Background="#EAF0F6" Margin="0,18,0,15"/><TextBlock Text="v = L / (2 cos θ) × (1/T_f − 1/T_r)" FontFamily="Segoe UI" FontSize="13"/><TextBlock x:Name="GeometryLabel" Style="{StaticResource Muted}" Margin="0,11,0,0"/></StackPanel></Border>
+    </Grid>
+    <Border Style="{StaticResource Card}"><StackPanel>
+     <Grid><TextBlock Text="演示数据设置" FontSize="16" FontWeight="SemiBold"/><TextBlock Text="输入时间后计算流速" Style="{StaticResource Muted}" HorizontalAlignment="Right" VerticalAlignment="Center"/></Grid>
+     <Grid Margin="0,18,0,16"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+      <StackPanel Margin="0,0,14,0"><TextBlock Text="顺流时间 / μs" Style="{StaticResource Muted}" Margin="0,0,0,8"/><TextBox x:Name="ForwardInput" Text="27.001" AutomationProperties.Name="顺流时间，微秒"/></StackPanel>
+      <StackPanel Grid.Column="1" Margin="0,0,14,0"><TextBlock Text="逆流时间 / μs" Style="{StaticResource Muted}" Margin="0,0,0,8"/><TextBox x:Name="ReverseInput" Text="27.053" AutomationProperties.Name="逆流时间，微秒"/></StackPanel>
+      <StackPanel Grid.Column="2" Margin="0,0,14,0"><TextBlock Text="声程 L / mm" Style="{StaticResource Muted}" Margin="0,0,0,8"/><TextBox x:Name="LengthInput" Text="40" AutomationProperties.Name="声程，毫米"/></StackPanel>
+      <StackPanel Grid.Column="3"><TextBlock Text="声程与水流夹角 θ / °" Style="{StaticResource Muted}" Margin="0,0,0,8"/><TextBox x:Name="AngleInput" Text="45" AutomationProperties.Name="夹角，度"/></StackPanel>
+     </Grid>
+     <Grid><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><TextBlock x:Name="StatusLabel" Foreground="#73859B" FontSize="11" VerticalAlignment="Center" Margin="0,0,16,0"/><Button Grid.Column="1" Content="恢复示例" Background="#EDF2F8" Foreground="#506783" Click="Reset_Click" Margin="0,0,10,0"/><Button Grid.Column="2" Content="计算流速  →" Click="Calculate_Click" IsDefault="True"/></Grid>
+    </StackPanel></Border>
+    <Grid Margin="2,17,2,0"><TextBlock Text="LS1D  /  超声波水流监测展示终端" FontSize="10" Foreground="#8A97A9"/><TextBlock Text="静态演示 · 数据为模拟值" FontSize="10" Foreground="#8A97A9" HorizontalAlignment="Right"/></Grid>
+   </StackPanel>
+  </ScrollViewer>
+ </Grid>
+</Window>

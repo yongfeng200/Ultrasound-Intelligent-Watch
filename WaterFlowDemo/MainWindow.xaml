@@ -1,0 +1,287 @@
+﻿<Window x:Class="WaterFlowDemo.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="水流速监测 · LS1D 展示终端" Width="1280" Height="900" MinWidth="1120" MinHeight="780" WindowStartupLocation="CenterScreen" Background="#F3F6FA" FontFamily="Microsoft YaHei UI" Foreground="#16283F">
+ <Window.Resources>
+  <Style TargetType="TextBlock"><Setter Property="TextWrapping" Value="Wrap"/></Style>
+  <Style x:Key="Muted" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}"><Setter Property="Foreground" Value="#7A889B"/><Setter Property="FontSize" Value="12"/></Style>
+  <Style x:Key="Card" TargetType="Border"><Setter Property="Background" Value="White"/><Setter Property="CornerRadius" Value="14"/><Setter Property="Padding" Value="20"/><Setter Property="BorderBrush" Value="#E5EBF2"/><Setter Property="BorderThickness" Value="1"/></Style>
+  <Style TargetType="TextBox"><Setter Property="FontSize" Value="14"/><Setter Property="Padding" Value="10,8"/><Setter Property="Background" Value="#F7F9FC"/><Setter Property="BorderBrush" Value="#DFE6EF"/><Setter Property="BorderThickness" Value="1"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
+  <Style TargetType="ComboBox"><Setter Property="FontSize" Value="12"/><Setter Property="Background" Value="#F7F9FC"/><Setter Property="BorderBrush" Value="#DFE6EF"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
+  <Style TargetType="Button"><Setter Property="Cursor" Value="Hand"/><Setter Property="Padding" Value="18,10"/><Setter Property="Background" Value="#1878F2"/><Setter Property="Foreground" Value="White"/><Setter Property="BorderThickness" Value="0"/><Setter Property="FontSize" Value="12"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border x:Name="Surface" Background="{TemplateBinding Background}" CornerRadius="7" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border><ControlTemplate.Triggers><Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Surface" Property="Opacity" Value="0.85"/></Trigger><Trigger Property="IsEnabled" Value="False"><Setter TargetName="Surface" Property="Opacity" Value="0.45"/></Trigger><Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Surface" Property="BorderBrush" Value="#73AFFF"/><Setter TargetName="Surface" Property="BorderThickness" Value="2"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+  <Style x:Key="Ghost" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}"><Setter Property="Background" Value="#EDF2F8"/><Setter Property="Foreground" Value="#506783"/><Setter Property="Padding" Value="13,8"/><Setter Property="FontSize" Value="11"/></Style>
+  <Style x:Key="NavButton" TargetType="Button"><Setter Property="Cursor" Value="Hand"/><Setter Property="Background" Value="Transparent"/><Setter Property="Foreground" Value="#829BB5"/><Setter Property="BorderThickness" Value="0"/><Setter Property="FontSize" Value="13"/><Setter Property="Padding" Value="14,11"/><Setter Property="HorizontalContentAlignment" Value="Left"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border x:Name="Bg" Background="{TemplateBinding Background}" CornerRadius="8" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="Center"/></Border><ControlTemplate.Triggers><Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Bg" Property="Background" Value="#1B3350"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+ </Window.Resources>
+ <Grid x:Name="AppRoot" Background="#F3F6FA">
+  <Grid.ColumnDefinitions><ColumnDefinition Width="210"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+
+  <Border Background="#10243C">
+   <Grid Margin="18,26,18,20">
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+    <StackPanel>
+     <Border Background="#237EF3" CornerRadius="10" Width="40" Height="40" HorizontalAlignment="Left"><TextBlock Text="≈" FontSize="30" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-4,0,0"/></Border>
+     <TextBlock Text="水流速监测" FontSize="20" FontWeight="Bold" Foreground="White" Margin="0,16,0,4"/>
+     <TextBlock Text="ULTRASONIC FLOW" FontSize="9" Foreground="#88A1BE"/>
+    </StackPanel>
+    <StackPanel Grid.Row="1" Margin="0,34,0,0">
+     <TextBlock Text="工作空间" Foreground="#6F89A6" FontSize="10" Margin="12,0,0,10"/>
+     <Button x:Name="NavMonitor" Content="◈   实时监测" Style="{StaticResource NavButton}" Tag="0" Click="Nav_Click"/>
+     <Button x:Name="NavTemp" Content="°C   温度转换" Style="{StaticResource NavButton}" Tag="1" Click="Nav_Click" Margin="0,4,0,0"/>
+     <Button x:Name="NavRaw" Content="≡   原始数据" Style="{StaticResource NavButton}" Tag="2" Click="Nav_Click" Margin="0,4,0,0"/>
+     <Button x:Name="NavRecord" Content="⇩   记录导出" Style="{StaticResource NavButton}" Tag="3" Click="Nav_Click" Margin="0,4,0,0"/>
+    </StackPanel>
+    <Border Grid.Row="3" Background="#1A324D" CornerRadius="10" Padding="14"><StackPanel>
+     <TextBlock Text="LS1D" Foreground="White" FontWeight="Bold" FontSize="17"/>
+     <TextBlock Text="龙芯超声波计量芯片" Foreground="#9CB0C7" FontSize="10" Margin="0,4,0,10"/>
+     <TextBlock x:Name="SideModeLabel" Text="●  演示模式" Foreground="#7FBDFF" FontSize="11"/>
+    </StackPanel></Border>
+   </Grid>
+  </Border>
+
+  <Grid Grid.Column="1">
+   <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+
+   <Grid Margin="30,22,30,0">
+    <StackPanel>
+     <TextBlock x:Name="PageTitle" Text="实时监测" FontSize="25" FontWeight="Bold"/>
+     <TextBlock x:Name="PageSubtitle" Text="顺逆流传播时间 · 流速与水温" Foreground="#7A889B" FontSize="12" Margin="0,5,0,0"/>
+    </StackPanel>
+    <Border x:Name="SourceBadge" Background="#E7EFFC" CornerRadius="15" Padding="13,7" HorizontalAlignment="Right" VerticalAlignment="Center"><TextBlock x:Name="SourceBadgeText" Text="●  演示数据 / 未连接串口" FontSize="11" Foreground="#3975BF"/></Border>
+   </Grid>
+
+   <Border Grid.Row="1" Style="{StaticResource Card}" Margin="30,14,30,0" Padding="16,12">
+    <Grid>
+     <Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="196"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="94"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+     <TextBlock Text="串口" VerticalAlignment="Center" Foreground="#5A6B80" FontSize="12" Margin="0,0,8,0"/>
+     <ComboBox x:Name="PortCombo" Grid.Column="1" Height="34" ToolTip="设备管理器中 USB-SERIAL CH340 对应的 COM 口"/>
+     <Button x:Name="RefreshButton" Grid.Column="2" Content="刷新" Style="{StaticResource Ghost}" Click="Refresh_Click" Margin="8,0,18,0"/>
+     <TextBlock Grid.Column="3" Text="波特率" VerticalAlignment="Center" Foreground="#5A6B80" FontSize="12" Margin="0,0,8,0"/>
+     <ComboBox x:Name="BaudCombo" Grid.Column="4" Height="34"/>
+     <Button x:Name="ConnectButton" Grid.Column="5" Content="连接串口" Click="Connect_Click" Margin="14,0,0,0"/>
+     <StackPanel Grid.Column="6" Orientation="Horizontal" VerticalAlignment="Center" Margin="18,0,0,0">
+      <Ellipse x:Name="StatusDot" Width="9" Height="9" Fill="#C9D4E1" VerticalAlignment="Center"/>
+      <TextBlock x:Name="SerialStatus" Text="未连接串口" Margin="8,0,0,0" FontSize="12" Foreground="#73859B" VerticalAlignment="Center"/>
+     </StackPanel>
+     <TextBlock x:Name="FrameStats" Grid.Column="7" Text="—" FontSize="11" Foreground="#8A97A9" VerticalAlignment="Center"/>
+    </Grid>
+   </Border>
+
+   <Grid Grid.Row="2" Margin="30,14,30,20">
+
+    <Grid x:Name="PageMonitor">
+     <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+
+     <Grid>
+      <Grid.ColumnDefinitions><ColumnDefinition Width="1.05*"/><ColumnDefinition/><ColumnDefinition/><ColumnDefinition Width="1.3*"/></Grid.ColumnDefinitions>
+      <Border Style="{StaticResource Card}" Padding="18" Margin="0,0,12,0" Background="#FFF8EE" BorderBrush="#F0DFC2" Cursor="Hand" ToolTip="打开温度换算页" MouseLeftButtonUp="TempCard_Click"><StackPanel>
+       <TextBlock Text="水温 T" Foreground="#B26A00" FontSize="13"/>
+       <StackPanel Orientation="Horizontal" Margin="0,12,0,6"><TextBlock x:Name="TempValue" Text="—" FontFamily="Segoe UI" FontSize="34" FontWeight="SemiBold" Foreground="#8A5300"/><TextBlock Text="°C" Margin="7,0,0,6" VerticalAlignment="Bottom" Foreground="#B26A00" FontSize="14"/></StackPanel>
+       <TextBlock x:Name="TempSubLabel" Text="等待温度数据" Style="{StaticResource Muted}"/>
+      </StackPanel></Border>
+      <Border Grid.Column="1" Style="{StaticResource Card}" Padding="18" Margin="0,0,12,0"><StackPanel>
+       <TextBlock Text="↘  顺流分析时间" Foreground="#4475AF" FontSize="13"/>
+       <StackPanel Orientation="Horizontal" Margin="0,12,0,6"><TextBlock x:Name="ForwardValue" Text="68.601" FontFamily="Segoe UI" FontSize="32" FontWeight="SemiBold"/><TextBlock Text="μs" Margin="7,0,0,6" VerticalAlignment="Bottom" Foreground="#7A889B" FontSize="14"/></StackPanel>
+       <TextBlock Text="T_f · 沿水流方向" Style="{StaticResource Muted}"/>
+      </StackPanel></Border>
+      <Border Grid.Column="2" Style="{StaticResource Card}" Padding="18" Margin="0,0,12,0"><StackPanel>
+       <TextBlock Text="↖  逆流分析时间" Foreground="#3C928D" FontSize="13"/>
+       <StackPanel Orientation="Horizontal" Margin="0,12,0,6"><TextBlock x:Name="ReverseValue" Text="68.728" FontFamily="Segoe UI" FontSize="32" FontWeight="SemiBold"/><TextBlock Text="μs" Margin="7,0,0,6" VerticalAlignment="Bottom" Foreground="#7A889B" FontSize="14"/></StackPanel>
+       <TextBlock Text="T_r · 逆水流方向" Style="{StaticResource Muted}"/>
+      </StackPanel></Border>
+      <Border Grid.Column="3" CornerRadius="14" Background="#1878F2" Padding="18"><StackPanel>
+       <TextBlock Text="计算水流速度" Foreground="#DAEAFF" FontSize="13"/>
+       <StackPanel Orientation="Horizontal" Margin="0,6,0,3"><TextBlock x:Name="VelocityValue" Text="3.285" Foreground="White" FontFamily="Segoe UI" FontSize="38" FontWeight="SemiBold"/><TextBlock Text="m/s" Foreground="#DAEAFF" Margin="8,0,0,7" VerticalAlignment="Bottom" FontSize="14"/></StackPanel>
+       <TextBlock x:Name="DirectionLabel" Text="→  正向流动" Foreground="White" FontSize="11"/>
+       <Border Height="1" Background="#4A97F7" Margin="0,8,0,6"/>
+       <StackPanel Orientation="Horizontal">
+        <TextBlock Text="流量" Foreground="#DAEAFF" FontSize="11" VerticalAlignment="Bottom" Margin="0,0,7,3"/>
+        <TextBlock x:Name="FlowValue" Text="—" Foreground="White" FontFamily="Segoe UI" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="m³/h" Foreground="#DAEAFF" FontSize="11" VerticalAlignment="Bottom" Margin="5,0,0,3"/>
+        <TextBlock x:Name="FlowIdLabel" Text="（D=15 mm）" Foreground="#BFD9FF" FontSize="10" VerticalAlignment="Bottom" Margin="6,0,0,3"/>
+       </StackPanel>
+      </StackPanel></Border>
+     </Grid>
+
+     <Border Grid.Row="1" Style="{StaticResource Card}" Margin="0,14,0,0" Padding="18,12">
+      <Grid>
+       <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+       <StackPanel>
+        <TextBlock Text="该水温声速 c(T)" Style="{StaticResource Muted}"/>
+        <StackPanel Orientation="Horizontal" Margin="0,4,0,0"><TextBlock x:Name="SoundSpeedTValue" Text="—" FontFamily="Segoe UI" FontSize="22" FontWeight="SemiBold"/><TextBlock Text="m/s" Foreground="#7A889B" FontSize="12" Margin="6,0,0,3" VerticalAlignment="Bottom"/></StackPanel>
+       </StackPanel>
+       <StackPanel Grid.Column="1">
+        <TextBlock Text="反推声程 L（c(T)·(Tf′+Tr′)/2）" Style="{StaticResource Muted}"/>
+        <StackPanel Orientation="Horizontal" Margin="0,4,0,0"><TextBlock x:Name="PathFromTempValue" Text="—" FontFamily="Segoe UI" FontSize="22" FontWeight="SemiBold"/><TextBlock Text="mm" Foreground="#7A889B" FontSize="12" Margin="6,0,0,3" VerticalAlignment="Bottom"/><Button Content="用此 L" Style="{StaticResource Ghost}" Padding="8,3" FontSize="10" Click="AdoptPath_Click" Margin="10,0,0,0" VerticalAlignment="Center"/></StackPanel>
+       </StackPanel>
+       <StackPanel Grid.Column="2">
+        <TextBlock Text="温度法流速（对照，不依赖 L）" Style="{StaticResource Muted}"/>
+        <StackPanel Orientation="Horizontal" Margin="0,4,0,0"><TextBlock x:Name="TempVelocityValue" Text="—" FontFamily="Segoe UI" FontSize="22" FontWeight="SemiBold"/><TextBlock Text="m/s" Foreground="#7A889B" FontSize="12" Margin="6,0,0,3" VerticalAlignment="Bottom"/></StackPanel>
+       </StackPanel>
+      </Grid>
+     </Border>
+
+     <Grid Grid.Row="2" Margin="0,14,0,0">
+      <Grid.ColumnDefinitions><ColumnDefinition Width="1.55*"/><ColumnDefinition/></Grid.ColumnDefinitions>
+      <Border Style="{StaticResource Card}" Padding="18" Margin="0,0,14,0"><StackPanel>
+       <TextBlock Text="声波传播示意" FontSize="15" FontWeight="SemiBold"/>
+       <TextBlock Text="同一声程，顺流先到达，逆流后到达" Style="{StaticResource Muted}" Margin="0,5,0,6"/>
+       <Viewbox Stretch="Uniform" Height="108" Margin="0,0,0,4"><Canvas Width="510" Height="180">
+        <Rectangle Canvas.Left="15" Canvas.Top="45" Width="480" Height="92" Fill="#EDF5FF"/>
+        <Line X1="15" Y1="45" X2="495" Y2="45" Stroke="#BACEE6" StrokeThickness="4"/><Line X1="15" Y1="137" X2="495" Y2="137" Stroke="#BACEE6" StrokeThickness="4"/>
+        <TextBlock Canvas.Left="180" Canvas.Top="108" Text="水流方向  →" Foreground="#93B6DF" FontSize="15"/>
+        <Line X1="100" Y1="53" X2="403" Y2="129" Stroke="#267EF0" StrokeThickness="3"/><Polygon Points="403,129 388,117 386,130" Fill="#267EF0"/>
+        <Line X1="400" Y1="115" X2="100" Y2="39" Stroke="#3BABA0" StrokeThickness="2" StrokeDashArray="5,3"/><Polygon Points="100,39 113,51 116,38" Fill="#3BABA0"/>
+        <Rectangle Canvas.Left="78" Canvas.Top="30" Width="37" Height="23" RadiusX="5" RadiusY="5" Fill="#244E7B"/><Rectangle Canvas.Left="385" Canvas.Top="127" Width="37" Height="23" RadiusX="5" RadiusY="5" Fill="#244E7B"/>
+        <TextBlock Canvas.Left="65" Canvas.Top="5" Text="换能器 A" Foreground="#4A6584" FontSize="12"/><TextBlock Canvas.Left="377" Canvas.Top="158" Text="换能器 B" Foreground="#4A6584" FontSize="12"/>
+       </Canvas></Viewbox>
+       <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"><TextBlock Text="━━  顺流 T_f" Foreground="#267EF0" FontSize="11" Margin="0,0,26,0"/><TextBlock Text="┄┄  逆流 T_r" Foreground="#3BABA0" FontSize="11"/></StackPanel>
+      </StackPanel></Border>
+      <Border Grid.Column="1" Style="{StaticResource Card}" Padding="16"><StackPanel>
+       <TextBlock Text="时差与计算" FontSize="15" FontWeight="SemiBold"/>
+       <TextBlock Text="传播时间差  ΔT = T_r − T_f" Style="{StaticResource Muted}" Margin="0,8,0,2"/>
+       <StackPanel Orientation="Horizontal"><TextBlock x:Name="DeltaValue" FontFamily="Segoe UI" FontSize="30" FontWeight="SemiBold"/><TextBlock Text="ns" Foreground="#7A889B" Margin="7,0,0,4" VerticalAlignment="Bottom"/></StackPanel>
+       <Border Height="1" Background="#EAF0F6" Margin="0,7,0,7"/>
+       <TextBlock Text="v = L / (2 cos θ) × (1/T_f′ − 1/T_r′)" FontFamily="Segoe UI" FontSize="12"/>
+       <TextBlock x:Name="GeometryLabel" Style="{StaticResource Muted}" Margin="0,5,0,0"/>
+       <TextBlock x:Name="DelayLabel" Text="固定延时 —" Style="{StaticResource Muted}" Margin="0,2,0,0"/>
+       <TextBlock x:Name="SoundSpeedLabel" Style="{StaticResource Muted}" Margin="0,2,0,0"/>
+      </StackPanel></Border>
+     </Grid>
+
+     <Border Grid.Row="3" Style="{StaticResource Card}" Margin="0,14,0,0" Padding="16,12"><StackPanel>
+      <Grid>
+       <Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+       <TextBlock Text="数据设置" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Center"/>
+       <TextBlock x:Name="StatusLabel" Grid.Column="1" Foreground="#73859B" FontSize="11" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="12,0,14,0" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis"/>
+       <StackPanel Grid.Column="2" Orientation="Horizontal">
+        <Button Content="取当前为零点" Style="{StaticResource Ghost}" Click="ZeroNow_Click" Margin="0,0,8,0"/>
+        <Button Content="恢复示例" Style="{StaticResource Ghost}" Click="Reset_Click" Margin="0,0,8,0"/>
+        <Button Content="计算流速  →" Click="Calculate_Click" IsDefault="True"/>
+       </StackPanel>
+      </Grid>
+      <Grid Margin="0,10,0,0"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+       <StackPanel Margin="0,0,10,0"><TextBlock Text="顺流时间 / μs" Style="{StaticResource Muted}" Margin="0,0,0,5"/><TextBox x:Name="ForwardInput" Text="68.601" Height="34" FontSize="13" Padding="8,6"/></StackPanel>
+       <StackPanel Grid.Column="1" Margin="0,0,10,0"><TextBlock Text="逆流时间 / μs" Style="{StaticResource Muted}" Margin="0,0,0,5"/><TextBox x:Name="ReverseInput" Text="68.728" Height="34" FontSize="13" Padding="8,6"/></StackPanel>
+       <StackPanel Grid.Column="2" Margin="0,0,10,0"><TextBlock Text="声程 L / mm" Style="{StaticResource Muted}" Margin="0,0,0,5"/><TextBox x:Name="LengthInput" Text="62" Height="34" FontSize="13" Padding="8,6"/></StackPanel>
+       <StackPanel Grid.Column="3"><TextBlock Text="夹角 θ / °" Style="{StaticResource Muted}" Margin="0,0,0,5"/><TextBox x:Name="AngleInput" Text="45" Height="34" FontSize="13" Padding="8,6"/></StackPanel>
+      </Grid>
+      <Grid Margin="0,9,0,0"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+       <StackPanel Margin="0,0,10,0"><TextBlock Text="固定延时 d / μs" Style="{StaticResource Muted}" Margin="0,0,0,5"/><TextBox x:Name="DelayInput" Text="27.5" Height="34" FontSize="13" Padding="8,6"/></StackPanel>
+       <StackPanel Grid.Column="1" Margin="0,0,10,0"><TextBlock Text="管内径 D / mm" Style="{StaticResource Muted}" Margin="0,0,0,5"/><TextBox x:Name="PipeIdInput" Text="15" Height="34" FontSize="13" Padding="8,6"/></StackPanel>
+       <StackPanel Grid.Column="2" Margin="0,0,10,0"><TextBlock Text="零点 ΔT₀ / ns" Style="{StaticResource Muted}" Margin="0,0,0,5"/><TextBox x:Name="ZeroInput" Text="0" Height="34" FontSize="13" Padding="8,6"/></StackPanel>
+       <TextBlock Grid.Column="3" Text="串口在线时自动写入" Style="{StaticResource Muted}" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,0,8"/>
+      </Grid>
+     </StackPanel></Border>
+    </Grid>
+
+    <Grid x:Name="PageTemp" Visibility="Collapsed">
+     <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+
+     <Border Style="{StaticResource Card}" Padding="22">
+      <StackPanel>
+       <Grid>
+        <StackPanel Orientation="Horizontal">
+         <TextBlock Text="PT1000 温度换算" FontSize="16" FontWeight="SemiBold"/>
+         <Border x:Name="TempSourceBadge" Background="#EDF2F8" CornerRadius="9" Padding="9,3" Margin="10,0,0,0" VerticalAlignment="Center"><TextBlock x:Name="TempSourceText" Text="等待" FontSize="10" Foreground="#506783"/></Border>
+        </StackPanel>
+        <TextBlock x:Name="TempStatus" Text="等待温度数据" Style="{StaticResource Muted}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+       </Grid>
+       <Grid Margin="0,16,0,0">
+        <Grid.ColumnDefinitions><ColumnDefinition Width="1.15*"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+        <StackPanel>
+         <TextBlock Text="原始计数 raw" Style="{StaticResource Muted}"/>
+         <TextBox x:Name="RawInput" FontSize="27" FontFamily="Segoe UI" FontWeight="SemiBold" Height="46" Padding="8,2" TextChanged="RawInput_TextChanged" ToolTip="串口自动写入；也可以手动输入一个计数看换算结果"/>
+         <TextBlock x:Name="RawSourceLabel" Text="串口或手动输入" Style="{StaticResource Muted}" Margin="0,4,0,0"/>
+        </StackPanel>
+        <TextBlock Grid.Column="1" Text="→" FontSize="30" Foreground="#B9C6D6" VerticalAlignment="Center" Margin="24,14,24,0"/>
+        <StackPanel Grid.Column="2">
+         <TextBlock Text="换算温度 T" Style="{StaticResource Muted}"/>
+         <StackPanel Orientation="Horizontal" Margin="0,2,0,0"><TextBlock x:Name="ConvertedTempValue" Text="—" FontFamily="Segoe UI" FontSize="40" FontWeight="SemiBold"/><TextBlock Text="°C" FontSize="16" Foreground="#7A889B" VerticalAlignment="Bottom" Margin="7,0,0,8"/></StackPanel>
+         <TextBlock x:Name="ConvertedSoundSpeed" Text="该温度声速 —" Style="{StaticResource Muted}" Margin="0,2,0,0"/>
+        </StackPanel>
+       </Grid>
+      </StackPanel>
+     </Border>
+
+     <Border Grid.Row="1" Style="{StaticResource Card}" Margin="0,14,0,0" Padding="20">
+      <StackPanel>
+       <Grid><TextBlock Text="两点标定" FontSize="15" FontWeight="SemiBold"/><Button Content="恢复固件默认" Style="{StaticResource Ghost}" HorizontalAlignment="Right" Click="CalibrationDefaults_Click"/></Grid>
+       <Grid Margin="0,14,0,0">
+        <Grid.ColumnDefinitions><ColumnDefinition Width="72"/><ColumnDefinition Width="150"/><ColumnDefinition Width="50"/><ColumnDefinition Width="110"/><ColumnDefinition Width="34"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+        <TextBlock Text="标定点 1" VerticalAlignment="Center" FontSize="12" Foreground="#5A6B80"/>
+        <TextBox x:Name="Raw0Input" Grid.Column="1" Height="34" FontSize="12" Padding="8,6" TextChanged="Calibration_TextChanged" ToolTip="0°C 时的原始计数"/>
+        <TextBlock Grid.Column="2" Text="→ 温度" VerticalAlignment="Center" FontSize="11" Foreground="#7A889B" Margin="4,0"/>
+        <TextBox x:Name="Temp0Input" Grid.Column="3" Height="34" FontSize="12" Padding="8,6" TextChanged="Calibration_TextChanged"/>
+        <TextBlock Grid.Column="4" Text="°C" VerticalAlignment="Center" FontSize="12" Foreground="#7A889B"/>
+        <Button Grid.Column="5" Content="取当前原始值" Style="{StaticResource Ghost}" Click="CaptureRaw0_Click"/>
+       </Grid>
+       <Grid Margin="0,9,0,0">
+        <Grid.ColumnDefinitions><ColumnDefinition Width="72"/><ColumnDefinition Width="150"/><ColumnDefinition Width="50"/><ColumnDefinition Width="110"/><ColumnDefinition Width="34"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+        <TextBlock Text="标定点 2" VerticalAlignment="Center" FontSize="12" Foreground="#5A6B80"/>
+        <TextBox x:Name="Raw1Input" Grid.Column="1" Height="34" FontSize="12" Padding="8,6" TextChanged="Calibration_TextChanged" ToolTip="100°C 时的原始计数"/>
+        <TextBlock Grid.Column="2" Text="→ 温度" VerticalAlignment="Center" FontSize="11" Foreground="#7A889B" Margin="4,0"/>
+        <TextBox x:Name="Temp1Input" Grid.Column="3" Height="34" FontSize="12" Padding="8,6" TextChanged="Calibration_TextChanged"/>
+        <TextBlock Grid.Column="4" Text="°C" VerticalAlignment="Center" FontSize="12" Foreground="#7A889B"/>
+        <Button Grid.Column="5" Content="取当前原始值" Style="{StaticResource Ghost}" Click="CaptureRaw1_Click"/>
+       </Grid>
+       <TextBlock x:Name="CalibrationSummary" Text="" Style="{StaticResource Muted}" Margin="0,10,0,0"/>
+      </StackPanel>
+     </Border>
+
+     <Border Grid.Row="2" Style="{StaticResource Card}" Margin="0,14,0,0" Padding="20" VerticalAlignment="Top">
+      <StackPanel>
+       <TextBlock Text="换算公式" FontSize="15" FontWeight="SemiBold"/>
+       <TextBlock Text="T = T0 + (raw − RAW0) × (T1 − T0) / (RAW1 − RAW0)" FontFamily="Segoe UI" FontSize="13" Margin="0,12,0,0"/>
+       <TextBlock Text="设备只输出原始计数（TEMPC,raw=…，或 TEMP 行的 resB−stsB），换算在 PC 完成；标定值保存在 exe 同目录的 temp_calib.ini，下次启动自动带上。" Style="{StaticResource Muted}" Margin="0,10,0,0"/>
+       <TextBlock x:Name="CalibrationNote" Text="" Style="{StaticResource Muted}" Margin="0,6,0,0"/>
+       <Border Height="1" Background="#EAF0F6" Margin="0,14,0,12"/>
+       <Grid>
+        <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+        <StackPanel><TextBlock Text="当前计数" Style="{StaticResource Muted}"/><TextBlock x:Name="DetailRaw" Text="—" FontFamily="Segoe UI" FontSize="16" FontWeight="SemiBold" Margin="0,4,0,0"/></StackPanel>
+        <StackPanel Grid.Column="1"><TextBlock Text="相对 0°C 的增量" Style="{StaticResource Muted}"/><TextBlock x:Name="DetailDelta" Text="—" FontFamily="Segoe UI" FontSize="16" FontWeight="SemiBold" Margin="0,4,0,0"/></StackPanel>
+        <StackPanel Grid.Column="2"><TextBlock Text="计数 / °C" Style="{StaticResource Muted}"/><TextBlock x:Name="DetailSlope" Text="—" FontFamily="Segoe UI" FontSize="16" FontWeight="SemiBold" Margin="0,4,0,0"/></StackPanel>
+        <StackPanel Grid.Column="3"><TextBlock Text="换算结果" Style="{StaticResource Muted}"/><TextBlock x:Name="DetailTemp" Text="—" FontFamily="Segoe UI" FontSize="16" FontWeight="SemiBold" Margin="0,4,0,0"/></StackPanel>
+       </Grid>
+      </StackPanel>
+     </Border>
+    </Grid>
+
+    <Grid x:Name="PageRaw" Visibility="Collapsed">
+     <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+     <Border Style="{StaticResource Card}" Padding="18,14">
+      <Grid><TextBlock Text="串口原始数据" FontSize="16" FontWeight="SemiBold"/><StackPanel Orientation="Horizontal" HorizontalAlignment="Right"><TextBlock x:Name="RawHint" Text="未接收数据" Style="{StaticResource Muted}" VerticalAlignment="Center" Margin="0,0,12,0"/><Button Content="清空" Style="{StaticResource Ghost}" Click="ClearRaw_Click"/></StackPanel></Grid>
+     </Border>
+     <Border Grid.Row="1" Style="{StaticResource Card}" Margin="0,14,0,0" Padding="12">
+      <TextBox x:Name="RawLog" IsReadOnly="True" BorderThickness="0" Background="#F7F9FC" FontFamily="Consolas" FontSize="12" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Padding="12,10" TextWrapping="NoWrap" AcceptsReturn="True" VerticalContentAlignment="Top"/>
+     </Border>
+    </Grid>
+
+    <Grid x:Name="PageRecord" Visibility="Collapsed">
+     <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+     <Border Style="{StaticResource Card}" Padding="20"><StackPanel>
+      <Grid>
+       <StackPanel Orientation="Horizontal">
+        <TextBlock Text="数据记录" FontSize="16" FontWeight="SemiBold"/>
+        <Border x:Name="RecordBadge" Background="#EDF2F8" CornerRadius="9" Padding="9,3" Margin="10,0,0,0" VerticalAlignment="Center"><TextBlock x:Name="RecordBadgeText" Text="未记录" FontSize="10" Foreground="#506783"/></Border>
+       </StackPanel>
+       <TextBlock x:Name="RecordStatus" Text="尚未开始记录" Style="{StaticResource Muted}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+      </Grid>
+      <StackPanel Orientation="Horizontal" Margin="0,16,0,0">
+       <Button x:Name="RecordButton" Content="开始记录" Click="Record_Click"/>
+       <Button Content="导出 CSV…" Style="{StaticResource Ghost}" Click="Export_Click" Margin="10,0,0,0"/>
+       <Button Content="打开文件夹" Style="{StaticResource Ghost}" Click="OpenRecordFolder_Click" Margin="8,0,0,0"/>
+      </StackPanel>
+      <TextBlock x:Name="RecordPathLabel" Text="记录文件：尚未开始" Style="{StaticResource Muted}" Margin="0,12,0,0"/>
+      <TextBlock Text="CSV 为 UTF-8（带 BOM），Excel / 记事本都能直接打开；每帧一行，记录当时的水温与计算结果。" Style="{StaticResource Muted}" Margin="0,4,0,0"/>
+     </StackPanel></Border>
+
+     <Border Grid.Row="1" Style="{StaticResource Card}" Margin="0,14,0,0" Padding="14">
+      <Grid>
+       <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+       <TextBlock Text="最近记录预览" FontSize="13" FontWeight="SemiBold" Margin="4,0,0,6"/>
+       <TextBox x:Name="RecordPreview" Grid.Row="1" IsReadOnly="True" BorderThickness="0" Background="#F7F9FC" FontFamily="Consolas" FontSize="11" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Padding="12,10" TextWrapping="NoWrap" AcceptsReturn="True" VerticalContentAlignment="Top"/>
+      </Grid>
+     </Border>
+    </Grid>
+
+   </Grid>
+  </Grid>
+ </Grid>
+</Window>
